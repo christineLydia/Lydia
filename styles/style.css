@@ -1,0 +1,32 @@
+.main-profile-pic-block {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url("../images/profiles/lydia.jpg")
+    margin: auto;
+}
+
+.navi-engineer {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: yellow;
+    text-align: center;
+    position: relative;
+    -webkit-animation-name: navi-engineer-effect; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: navi-engineer-effect;
+    animation-duration: 2s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes navi-engineer-effect {
+  0%   {background-color:red; left:0px; top:0px;}
+  100% {background-color:red; left:300px; top:50px;}
+}
+
+/* Standard syntax */
+@keyframes navi-engineer-effect {
+  0%   {background-color:red; left:0px; top:0px;}
+  100% {background-color:red; left:300px; top:50px;}
+}
