@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         $(this).animate({ width: "80px", height: "80px" }, "slow");
     });
 
+/*
     $(".navi-writer").click(function() {
         console.log("In writer,");
         var iframe = $("iframe").attr('name', "iframe_display_body");
@@ -39,6 +40,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
         return true;
     });
+*/
 
     $(".navi-painter").hover(function() {
         $(this).css("cursor", "pointer");

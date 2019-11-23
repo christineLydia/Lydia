@@ -1,5 +1,5 @@
 .main-profile-pic-block {
-    height: 450px;
+    height: 350px;
     width: 100%;
     background-color: #ABEBC6;
 }
@@ -11,11 +11,9 @@
     background-image: url("../images/profiles/lydia.jpg");
     background-size: 100% 100%;
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    //margin-top: -50px;
-    //margin-left: -50px;
     z-index: 10;
 }
 
@@ -39,11 +37,11 @@
 @-webkit-keyframes navi-engineer-effect {
     0% {
         position: absolute;
-        top: 50%;
+        top: 20%;
         left: 50%;
-        margin-top: -50px;
-        margin-left: -50px;
-    }  
+        transform: translate(-50%, -50%);
+    }
+  
     100% {
         position: absolute;
         left: 360px;
@@ -55,10 +53,9 @@
 @keyframes navi-engineer-effect {
     0% {
         position: absolute;
-        top: 50%;
+        top: 20%;
         left: 50%;
-        margin-top: -50px;
-        margin-left: -50px;
+        transform: translate(-50%, -50%);
     }
     100% {
         position: absolute;
@@ -87,10 +84,9 @@
 @-webkit-keyframes navi-writer-effect {
     0% {
         position: absolute;
-        top: 50%;
+        top: 20%;
         left: 50%;
-        margin-top: -50px;
-        margin-left: -50px;
+        transform: translate(-50%, -50%);
     }
     100% {
         position: absolute;
@@ -103,10 +99,9 @@
 @keyframes navi-writer-effect {
     0% {
         position: absolute;
-        top: 50%;
+        top: 20%;
         left: 50%;
-        margin-top: -50px;
-        margin-left: -50px;
+        transform: translate(-50%, -50%);
     }
     100% {
         position: absolute;
@@ -135,10 +130,9 @@
 @-webkit-keyframes navi-painter-effect {
     0% {
         position: absolute;
-        top: 50%;
+        top: 20%;
         left: 50%;
-        margin-top: -50px;
-        margin-left: -50px;
+        transform: translate(-50%, -50%);
     }
     100% {
         position: absolute;
@@ -151,10 +145,9 @@
 @keyframes navi-painter-effect {
     0% {
         position: absolute;
-        top: 50%;
+        top: 20%;
         left: 50%;
-        margin-top: -50px;
-        margin-left: -50px;
+        transform: translate(-50%, -50%);
     }
     100% {
         position: absolute;
@@ -183,10 +176,9 @@
 @-webkit-keyframes navi-kittyMother-effect {
     0% {
         position: absolute;
-        top: 50%;
+        top: 20%;
         left: 50%;
-        margin-top: -50px;
-        margin-left: -50px;
+        transform: translate(-50%, -50%);
     }
     100% {
         position: absolute;
@@ -199,10 +191,9 @@
 @keyframes navi-kittyMother-effect {
     0% {
         position: absolute;
-        top: 50%;
+        top: 20%;
         left: 50%;
-        margin-top: -50px;
-        margin-left: -50px;
+        transform: translate(-50%, -50%);
     }
     100% {
         position: absolute;
@@ -213,7 +204,7 @@
 
 .hi-logo {
     position: absolute;
-    top: 300px;
+    top: 200px;
     width: 100%;
     height: 150px;
 }
@@ -329,25 +320,46 @@
 
 .writer-section {
     margin-top: 25px;
-    height: 180px;
+    height: 200px;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 40px;
     // TODO: update later
-    z-index: 6;
-    background-color: #B5C7A7;
+    // background-color: #B5C7A7;
+}
+
+#david-baltimore.writer-section {
+    animation: writer-section-effect 2s;
+}
+
+#robert-grubbs.writer-section {
+    animation: writer-section-effect 2s 0.5s;
+}
+
+#rudolph-marcus.writer-section {
+    animation: writer-section-effect 2s 1s;
+}
+
+@keyframes writer-section-effect {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
 }
 
 .writer-pic-container {
-    height: 180px;
-    width: 180px;
+    height: 200px;
+    width: 200px;
     float: left;
 }
 
 .nobel-prize-baltimore-pic {
-    height: 150px;
-    width: 150px;
+    height: 166px;
+    width: 166px;
     background-image: url("../images/writer/with-david-baltimore.png");
     background-size: 100% 100%;
     border-radius: 20%;
@@ -355,8 +367,8 @@
 }
 
 .nobel-prize-grubbs-pic {
-    height: 150px;
-    width: 150px;
+    height: 166px;
+    width: 166px;
     background-image: url("../images/writer/with-robert-grubbs.png");
     background-size: 100% 100%;
     border-radius: 20%;
@@ -364,8 +376,8 @@
 }
 
 .nobel-prize-marcus-pic {
-    height: 150px;
-    width: 150px;
+    height: 166px;
+    width: 166px;
     background-image: url("../images/writer/with-rudolph-marcus.png");
     background-size: 100% 100%;
     border-radius: 20%;
@@ -374,24 +386,30 @@
 
 .writer-text-container {
     position: relative;
-    left: 200px;
-    padding-left: 25px;
+    padding-left: 220px;
     height: 180px;
-    width: 60%;
+    width: 70%;
 }
 
 .writer-text-main {
-    height: 120px;
+    height: 140px;
     width: 100%;
-    padding-bottom: 10px;
-    font-size: 14px;
+    padding-bottom: 15px;
+}
+
+.writer-text-title {
+    font-size: 24px;
+}
+
+.writer-text-intro {
+    font-size: 15.5px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .read-full-article-container {
     height: 50px;
     width: 100%;
-    position: absolute;
+    position: relative;
     bottom: 0;
 }
 
@@ -403,7 +421,7 @@
     padding: 10px 20px;
     background-color: yellow;
     border-radius: 30%;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .read-full-article-button:hover {
