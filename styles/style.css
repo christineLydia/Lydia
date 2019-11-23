@@ -1,9 +1,22 @@
 .main-profile-pic-block {
+    height: 450px;
+    width: 100%;
+    background-color: #ABEBC6;
+}
+
+.main-profile-pic {
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    background-image: url("../images/profiles/lydia.jpg")
-    margin: auto;
+    background-image: url("../images/profiles/lydia.jpg");
+    background-size: 100% 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    //margin-top: -50px;
+    //margin-left: -50px;
+    z-index: 10;
 }
 
 .navi-engineer {
@@ -12,7 +25,10 @@
     border-radius: 50%;
     background-color: yellow;
     text-align: center;
-    position: relative;
+    z-index: 5;
+    position: absolute;
+    left: 360px;
+    top: 50px;
     -webkit-animation-name: navi-engineer-effect; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
     animation-name: navi-engineer-effect;
@@ -21,12 +37,381 @@
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes navi-engineer-effect {
-  0%   {background-color:red; left:0px; top:0px;}
-  100% {background-color:red; left:300px; top:50px;}
+    0% {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -50px;
+        margin-left: -50px;
+    }  
+    100% {
+        position: absolute;
+        left: 360px;
+        top: 50px;
+    }
 }
 
 /* Standard syntax */
 @keyframes navi-engineer-effect {
-  0%   {background-color:red; left:0px; top:0px;}
-  100% {background-color:red; left:300px; top:50px;}
+    0% {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -50px;
+        margin-left: -50px;
+    }
+    100% {
+        position: absolute;
+        left: 360px;
+        top: 50px;
+    }
+}
+
+.navi-writer {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: blue;
+    text-align: center;
+    z-index: 5;
+    position: absolute;
+    right: 360px;
+    top: 50px;
+    -webkit-animation-name: navi-engineer-effect; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: navi-writer-effect;
+    animation-duration: 2s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes navi-writer-effect {
+    0% {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -50px;
+        margin-left: -50px;
+    }
+    100% {
+        position: absolute;
+        right: 360px;
+        top: 50px;
+    }
+}
+
+/* Standard syntax */
+@keyframes navi-writer-effect {
+    0% {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -50px;
+        margin-left: -50px;
+    }
+    100% {
+        position: absolute;
+        right: 360px;
+        top: 50px;
+    }
+}
+
+.navi-painter {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: pink;
+    text-align: center;
+    z-index: 5;
+    position: absolute;
+    left: 150px;
+    top: 150px;
+    -webkit-animation-name: navi-painter-effect; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: navi-painter-effect;
+    animation-duration: 2s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes navi-painter-effect {
+    0% {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -50px;
+        margin-left: -50px;
+    }
+    100% {
+        position: absolute;
+        left: 150px;
+        top: 150px;
+    }
+}
+
+/* Standard syntax */
+@keyframes navi-painter-effect {
+    0% {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -50px;
+        margin-left: -50px;
+    }
+    100% {
+        position: absolute;
+        left: 150px;
+        top: 150px;
+    }
+}
+
+.navi-kittyMother {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #CCABEB;
+    text-align: center;
+    z-index: 5;
+    position: absolute;
+    right: 150px;
+    top: 150px;
+    -webkit-animation-name: navi-kittyMother-effect; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: navi-kittyMother-effect;
+    animation-duration: 2s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes navi-kittyMother-effect {
+    0% {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -50px;
+        margin-left: -50px;
+    }
+    100% {
+        position: absolute;
+        right: 150px;
+        top: 150px;
+    }
+}
+
+/* Standard syntax */
+@keyframes navi-kittyMother-effect {
+    0% {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -50px;
+        margin-left: -50px;
+    }
+    100% {
+        position: absolute;
+        right: 150px;
+        top: 150px;
+    }
+}
+
+.hi-logo {
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    height: 150px;
+}
+
+#hi-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: hi-logo-fill 3s ease forwards 5s;
+}
+
+#hi-logo path {
+    stroke-width: 2px;
+    stroke: blue;
+}
+
+#hi-logo path:nth-child(1) {
+    stroke-dasharray: 1111.5;
+    stroke-dashoffset: 1111.5;
+    animation: hi-logo-animation 2.5s ease forwards;
+}
+
+#hi-logo path:nth-child(2) {
+    stroke-dasharray: 257.521;
+    stroke-dashoffset: 257.521;
+    animation: hi-logo-animation 0.8s ease forwards 1s;
+}
+
+#hi-logo path:nth-child(3) {
+    stroke-dasharray: 73.27;
+    stroke-dashoffset: 73.27;
+    animation: hi-logo-animation 0.4s ease forwards 1.8s;
+}
+
+#hi-logo path:nth-child(4) {
+    stroke-dasharray: 692.1;
+    stroke-dashoffset: 692.1;
+    animation: hi-logo-animation 1.5s ease forwards 2.2s;
+}
+
+#hi-logo path:nth-child(5) {
+    stroke-dasharray: 431.58;
+    stroke-dashoffset: 431.58;
+    animation: hi-logo-animation 1.6s ease forwards 2.6s;
+}
+
+#hi-logo path:nth-child(6) {
+    stroke-dasharray: 576;
+    stroke-dashoffset: 576;
+    animation: hi-logo-animation 2.2s ease forwards 3s;
+}
+
+#hi-logo path:nth-child(7) {
+    stroke-dasharray: 637;
+    stroke-dashoffset: 637;
+    animation: hi-logo-animation 1.5s ease forwards 4s;
+}
+
+#hi-logo path:nth-child(8) {
+    stroke-dasharray: 383;
+    stroke-dashoffset: 383;
+    animation: hi-logo-animation 2s ease forwards 4.5s;
+}
+
+@keyframes hi-logo-animation {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes hi-logo-fill {
+    from {
+        fill: transparent;
+    }
+
+    to {
+        fill: blue;
+    }
+}
+
+.iframe-display-body {
+    width: 100%;
+    height: 100vh;
+    border: none;
+    // background-color: #A7A3C7;
+}
+
+.engineer-section {
+    width: 60%;
+    margin: auto;
+    padding-top: 40px;
+    // TODO: update later
+    z-index: 6;
+    background-color: #A3C7A7;
+}
+
+.engineer-pic-container {
+    display: inline-block;
+    width: 40%;
+    padding: 15px;
+    // TODO: update later
+    background-color: yellow;
+}
+
+.engineer-text-container {
+    display: inline-block;
+    width: 60%;
+    padding: 15px;
+    // TODO: update later
+    background-color: green;
+}
+
+.writer-section {
+    margin-top: 25px;
+    height: 180px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    // TODO: update later
+    z-index: 6;
+    background-color: #B5C7A7;
+}
+
+.writer-pic-container {
+    height: 180px;
+    width: 180px;
+    float: left;
+}
+
+.nobel-prize-baltimore-pic {
+    height: 150px;
+    width: 150px;
+    background-image: url("../images/writer/with-david-baltimore.png");
+    background-size: 100% 100%;
+    border-radius: 20%;
+    padding: 15px;
+}
+
+.nobel-prize-grubbs-pic {
+    height: 150px;
+    width: 150px;
+    background-image: url("../images/writer/with-robert-grubbs.png");
+    background-size: 100% 100%;
+    border-radius: 20%;
+    padding: 15px;
+}
+
+.nobel-prize-marcus-pic {
+    height: 150px;
+    width: 150px;
+    background-image: url("../images/writer/with-rudolph-marcus.png");
+    background-size: 100% 100%;
+    border-radius: 20%;
+    padding: 15px;
+}
+
+.writer-text-container {
+    position: relative;
+    left: 200px;
+    padding-left: 25px;
+    height: 180px;
+    width: 60%;
+}
+
+.writer-text-main {
+    height: 120px;
+    width: 100%;
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.read-full-article-container {
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.read-full-article-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: yellow;
+    border-radius: 30%;
+    font-size: 20px;
+}
+
+.read-full-article-button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.read-full-article-text {
+    font-size: 18px;
+    text-align: center;
 }
