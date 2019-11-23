@@ -17,7 +17,7 @@
     z-index: 10;
 }
 
-.navi-engineer {
+.navi-student {
     height: 80px;
     width: 80px;
     border-radius: 50%;
@@ -25,8 +25,54 @@
     text-align: center;
     z-index: 5;
     position: absolute;
-    left: 360px;
+    left: 400px;
     top: 50px;
+    -webkit-animation-name: navi-student-effect; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation: navi-student-effect 2s ease;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes navi-student-effect {
+    0% {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    100% {
+        position: absolute;
+        left: 400px;
+        top: 50px;
+    }
+}
+
+/* Standard syntax */
+@keyframes navi-student-effect {
+    0% {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    100% {
+        position: absolute;
+        left: 400px;
+        top: 50px;
+    }
+}
+
+
+.navi-engineer {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #5500FF;
+    text-align: center;
+    z-index: 5;
+    position: absolute;
+    left: 270px;
+    top: 100px;
     -webkit-animation-name: navi-engineer-effect; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
     animation: navi-engineer-effect 2s ease;
@@ -40,11 +86,10 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
-  
     100% {
         position: absolute;
-        left: 360px;
-        top: 50px;
+        left: 270px;
+        top: 100px;
     }
 }
 
@@ -58,8 +103,8 @@
     }
     100% {
         position: absolute;
-        left: 360px;
-        top: 50px;
+        left: 270px;
+        top: 100px;
     }
 }
 
@@ -71,7 +116,7 @@
     text-align: center;
     z-index: 5;
     position: absolute;
-    right: 360px;
+    right: 400px;
     top: 50px;
     -webkit-animation-name: navi-engineer-effect; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
@@ -88,7 +133,7 @@
     }
     100% {
         position: absolute;
-        right: 360px;
+        right: 400px;
         top: 50px;
     }
 }
@@ -103,10 +148,56 @@
     }
     to {
         position: absolute;
-        right: 360px;
+        right: 400px;
         top: 50px;
     }
 }
+
+.navi-entrepreneur {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #33CC4D;
+    text-align: center;
+    z-index: 5;
+    position: absolute;
+    right: 275px;
+    top: 100px;
+    -webkit-animation-name: navi-entrepreneur-effect; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation: navi-entrepreneur-effect 2s ease;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes navi-entrepreneur-effect {
+    0% {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    100% {
+        position: absolute;
+        right: 275px;
+        top: 100px;
+    }
+}
+
+/* Standard syntax */
+@keyframes navi-entrepreneur-effect {
+    0% {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    100% {
+        position: absolute;
+        right: 275px;
+        top: 100px;
+    }
+}
+
 
 .navi-painter {
     height: 80px;
@@ -117,7 +208,7 @@
     z-index: 5;
     position: absolute;
     left: 150px;
-    top: 150px;
+    top: 200px;
     -webkit-animation-name: navi-painter-effect; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
     animation-name: navi-painter-effect;
@@ -135,7 +226,7 @@
     100% {
         position: absolute;
         left: 150px;
-        top: 150px;
+        top: 200px;
     }
 }
 
@@ -150,7 +241,7 @@
     100% {
         position: absolute;
         left: 150px;
-        top: 150px;
+        top: 200px;
     }
 }
 
@@ -163,7 +254,7 @@
     z-index: 5;
     position: absolute;
     right: 150px;
-    top: 150px;
+    top: 200px;
     -webkit-animation-name: navi-kittyMother-effect; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
     animation: navi-kittyMother-effect 2s ease;
@@ -180,7 +271,7 @@
     100% {
         position: absolute;
         right: 150px;
-        top: 150px;
+        top: 200px;
     }
 }
 
@@ -195,7 +286,7 @@
     100% {
         position: absolute;
         right: 150px;
-        top: 150px;
+        top: 200px;
     }
 }
 
@@ -321,7 +412,7 @@
     width: 60%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 40px;
+    padding-top: 50px;
     // TODO: update later
     // background-color: #B5C7A7;
 }
@@ -349,14 +440,14 @@
 }
 
 .writer-pic-container {
-    height: 200px;
-    width: 200px;
+    height: 220px;
+    width: 220px;
     float: left;
 }
 
 .nobel-prize-baltimore-pic {
-    height: 166px;
-    width: 166px;
+    height: 180px;
+    width: 190px;
     background-image: url("../images/writer/with-david-baltimore.png");
     background-size: 100% 100%;
     border-radius: 20%;
@@ -364,8 +455,8 @@
 }
 
 .nobel-prize-grubbs-pic {
-    height: 166px;
-    width: 166px;
+    height: 180px;
+    width: 190px;
     background-image: url("../images/writer/with-robert-grubbs.png");
     background-size: 100% 100%;
     border-radius: 20%;
@@ -373,8 +464,8 @@
 }
 
 .nobel-prize-marcus-pic {
-    height: 166px;
-    width: 166px;
+    height: 180px;
+    width: 190px;
     background-image: url("../images/writer/with-rudolph-marcus.png");
     background-size: 100% 100%;
     border-radius: 20%;
@@ -383,7 +474,7 @@
 
 .writer-text-container {
     position: relative;
-    padding-left: 220px;
+    padding-left: 240px;
     height: 180px;
     width: 70%;
 }
@@ -394,11 +485,27 @@
     padding-bottom: 15px;
 }
 
-.writer-text-title {
-    font-size: 24px;
+.writer-text-title-container {
+    height: 34px;
+}
+
+.writer-text-title-content {
+    color: #5500FF;
+    font-size: 28px;
+    float: left;
+}
+
+.writer-text-title-logo-caltech {
+    position: relative;
+    left: 350px;
+    height: 34px;
+    width: 34px;
+    background-image: url("../images/writer/caltech-logo.png");
+    background-size: 100% 100%;
 }
 
 .writer-text-intro {
+    padding-top: 10px;
     font-size: 15.5px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -416,9 +523,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px 20px;
-    background-color: yellow;
-    border-radius: 30%;
+    background-color: #34D8DB;
+    border-radius: 100px;
     font-size: 18px;
+    color: #FFFFFF;
 }
 
 .read-full-article-button:hover {
@@ -428,5 +536,6 @@
 
 .read-full-article-text {
     font-size: 18px;
+    color: #FFFFFF;
     text-align: center;
 }
