@@ -406,6 +406,95 @@
     background-color: green;
 }
 
+.experience-section {
+    margin-top: 25px;
+    height: 220px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}
+
+.experience-text-container-left {
+    float: left;
+    height: 200px;
+    width: 80%;
+}
+
+.experience-text-container-right {
+    position: relative;
+    float: right;
+    height: 200px;
+    width: 80%;
+}
+
+.experience-text-main {
+    height: 160px;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.experience-text-title-container {
+    height: 30px;
+}
+
+.experience-text-title-content {
+    color: #5500FF;
+    font-size: 28px;
+    float: left;
+}
+
+.experience-text-title-subcontent {
+    font-size: 18px;
+    float: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.experience-text-position {
+    font-size: 22px;
+    float: left;
+}
+
+.experience-pic-container-left {
+    position: relative;
+    float: left;
+    width: 20%;
+}
+
+.experience-pic-container-right {
+    position: relative;
+    float: right;
+    width: 20%;
+}
+
+.easyrent-logo-pic {
+    height: 200px;
+    width: 100%;
+    background-color: blue;
+}
+
+.tca-logo-pic {
+    height: 200px;
+    width: 100%;
+    background-image: url("../images/experiences/tca-logo.png");
+    background-size: 100% 100%;
+}
+
+.mode-logo-pic {
+    height: 200px;
+    width: 100%;
+    background-image: url("../images/experiences/mode-logo.png");
+    background-size: 100% 100%;
+}
+
+.fenwick-logo-pic {
+    height: 200px;
+    width: 100%;
+    background-image: url("../images/experiences/fenwick-logo.png");
+    background-size: 100% 100%;
+}
+
 .writer-page-intro-container {
     height: 120px;
     width: 80%;
@@ -433,6 +522,10 @@
 
 #rudolph-marcus.writer-section {
     animation: writer-section-effect 2s backwards 1s;
+}
+
+#stanford-cgcp.writer-section {
+    nimation: writer-section-effect 2s backwards 1.5s;
 }
 
 @keyframes writer-section-effect {
@@ -478,6 +571,15 @@
     padding: 15px;
 }
 
+.stanford-cgcp-pic {
+    height: 180px;
+    width: 190px;
+    background-image: url("../images/writer/stanford-cgcp-with-mei.jpg");
+    background-size: 100% 100%;
+    border-radius: 20%;
+    padding: 15px;
+}
+
 .writer-text-container {
     position: relative;
     padding-left: 240px;
@@ -507,6 +609,15 @@
     height: 34px;
     width: 34px;
     background-image: url("../images/writer/caltech-logo.png");
+    background-size: 100% 100%;
+}
+
+.writer-text-title-logo-stanford {
+    position: relative;
+    left: 350px;
+    height: 34px;
+    width: 34px;
+    background-image: url("../images/writer/stanford-logo.png");
     background-size: 100% 100%;
 }
 

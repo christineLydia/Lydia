@@ -65,14 +65,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
         $(this).css("cursor", "help");
         $(".kitty-pic-large-pitton").css("filter", "grayscale(0)");
     }, function() {
-        $(".kitty-pic-large-pitton").css("filter", "grayscale(1)");
+        $(".kitty-pic-large-pitton").css("filter", "grayscale(70%)");
     });
 
     $("#dublin").hover(function() {
         $(this).css("cursor", "help");
         $(".kitty-pic-large-dublin").css("filter", "grayscale(0)");
     }, function() {
-        $(".kitty-pic-large-dublin").css("filter", "grayscale(1)");
+        $(".kitty-pic-large-dublin").css("filter", "grayscale(70%)");
     });
 
     $(".main-profile-pic").hover(function() {
