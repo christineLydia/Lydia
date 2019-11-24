@@ -42,14 +42,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 */
 
-    $(".navi-painter").hover(function() {
+    $(".navi-art-lover").hover(function() {
         $(this).css("cursor", "pointer");
         $(this).animate({ width: "90px", height: "90px" }, "slow");
     }, function() {
         $(this).animate({ width: "80px", height: "80px" }, "slow");
     });
     
-    $(".navi-painter").click(function() {
+    $(".navi-art-lover").click(function() {
         window.location = $(this).find("a").attr("href");
         return false;
     });    
@@ -61,9 +61,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
         $(this).animate({ width: "80px", height: "80px" }, "slow");
     });
 
-    $(".navi-kittyMother").click(function() {
-        window.location = $(this).find("a").attr("href");
-        return false;
+    $("#pitton").hover(function() {
+        $(this).css("cursor", "help");
+        $(".kitty-pic-large-pitton").css("filter", "grayscale(0)");
+    }, function() {
+        $(".kitty-pic-large-pitton").css("filter", "grayscale(1)");
+    });
+
+    $("#dublin").hover(function() {
+        $(this).css("cursor", "help");
+        $(".kitty-pic-large-dublin").css("filter", "grayscale(0)");
+    }, function() {
+        $(".kitty-pic-large-dublin").css("filter", "grayscale(1)");
     });
 
     $(".main-profile-pic").hover(function() {

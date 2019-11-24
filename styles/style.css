@@ -199,7 +199,7 @@
 }
 
 
-.navi-painter {
+.navi-art-lover {
     height: 80px;
     width: 80px;
     border-radius: 50%;
@@ -209,14 +209,14 @@
     position: absolute;
     left: 150px;
     top: 200px;
-    -webkit-animation-name: navi-painter-effect; /* Safari 4.0 - 8.0 */
+    -webkit-animation-name: navi-art-lover-effect; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
-    animation-name: navi-painter-effect;
+    animation-name: navi-art-lover-effect;
     animation-duration: 2s;
 }
 
 /* Safari 4.0 - 8.0 */
-@-webkit-keyframes navi-painter-effect {
+@-webkit-keyframes navi-art-lover-effect {
     0% {
         position: absolute;
         top: 20%;
@@ -231,7 +231,7 @@
 }
 
 /* Standard syntax */
-@keyframes navi-painter-effect {
+@keyframes navi-art-lover-effect {
     0% {
         position: absolute;
         top: 20%;
@@ -406,6 +406,12 @@
     background-color: green;
 }
 
+.writer-page-intro-container {
+    height: 120px;
+    width: 80%;
+    margin: auto;
+}
+
 .writer-section {
     margin-top: 25px;
     height: 200px;
@@ -539,3 +545,167 @@
     color: #FFFFFF;
     text-align: center;
 }
+
+.kittyMother-page {
+    width: 100%;
+    height: 100vh;
+    background-color: #E2E2E2;
+}
+
+.kittyMother-page-intro-container {
+    height: 150px;
+    width: 80%;
+    margin: auto;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 28px;
+    font-family: Comic Sans MS;
+    color: #5500FF;
+    padding-bottom: 10px;
+}
+
+.page-intro {
+    font-size: 16px;
+    font-family: roboto, helvetica, sans-serif;
+}
+
+.kitty-name {
+    font-weight: bold;
+    color: #5500FF;
+}
+
+.kitty-section-large {
+    height: 240px;
+    width: 480px;
+    margin: auto;
+}
+
+.kitty-pic-large-pitton {
+    float: left;
+    height: 240px;
+    width: 240px;
+    background-image: url("../images/kitties/1.JPG");
+    background-size: 100% 100%;
+    animation: fade-in-effect 4s ease both 0.2s;
+}
+
+.kitty-pic-large-dublin {
+    position: relative;
+    left: 240px;
+    height: 240px;
+    width: 240px;
+    background-image: url("../images/kitties/2.JPG");
+    background-size: 100% 100%;
+    animation: fade-in-effect 4s ease both 0.2s;
+}
+
+.kitty-section-regular {
+    // change later
+    height: 180px;
+}
+
+table {
+    width: 100%;
+    border: 0;
+}
+
+tr {
+    height: 200px;
+}
+
+th {
+    width: 16.6%;
+}
+
+@keyframes fade-in-effect {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.kitty-pic {
+    filter: grayscale(70%);
+}
+
+.kitty-pic:hover {
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+.kitty-pic-regular-1 {
+    background-image: url("../images/kitties/3.JPG");
+    background-size: 100% 100%;
+    animation: fade-in-effect 4s ease both 0.5s;
+}
+
+.kitty-pic-regular-2 {
+    background-image: url("../images/kitties/4.JPG");
+    background-size: 100% 100%;
+    animation: fade-in-effect 4s ease both 0.8s;
+}
+
+.kitty-pic-regular-3 {
+    background-image: url("../images/kitties/5.JPG");
+    background-size: 100% 100%;
+    animation: fade-in-effect 4s ease both 1.1s;
+}
+
+.kitty-pic-regular-4 {
+    background-image: url("../images/kitties/6.JPG");
+    background-size: 100% 100%;
+    animation: fade-in-effect 4s ease both 1.4s;
+}
+
+.kitty-pic-regular-5 {
+    background-image: url("../images/kitties/7.JPG");
+    background-size: 100% 100%;
+    animation: fade-in-effect 4s ease both 1.7s;
+}
+
+.kitty-pic-regular-6 {
+    background-image: url("../images/kitties/8.JPG");
+    background-size: 100% 100%;
+    animation: fade-in-effect 4s ease both 2.0s;
+}
+
+.kitty-pic-regular-7 {
+    background-image: url("../images/kitties/9.JPG");
+    background-size: 100% 100%;
+    animation: fade-in-effect 4s ease both 2.0s;
+}
+
+.kitty-pic-regular-8 {
+    background-image: url("../images/kitties/10.JPG");
+    background-size: 100% 100%;
+    animation: fade-in-effect 4s ease both 1.7s;
+}
+
+.kitty-pic-regular-9 {
+    background-image: url("../images/kitties/11.JPG");
+    background-size: 100% 100%;
+    animation: fade-in-effect 4s ease both 1.4s;
+}
+
+.kitty-pic-regular-10 {
+    background-image: url("../images/kitties/12.JPG");
+    background-size: 100% 100%;
+    animation: fade-in-effect 4s ease both 1.1s;
+}
+
+.kitty-pic-regular-11 {
+    background-image: url("../images/kitties/13.JPG");
+    background-size: 100% 100%;
+    animation: fade-in-effect 4s ease both 0.8s;
+}
+
+.kitty-pic-regular-12 {
+    background-image: url("../images/kitties/14.PNG");
+    background-size: 100% 100%;
+    animation: fade-in-effect 4s ease both 0.5s;
+}
+
