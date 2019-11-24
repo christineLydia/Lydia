@@ -7,21 +7,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
         console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);
     }
     //
-    $(".navi-engineer").hover(function() {
+    $(".navi-experience").hover(function() {
         $(this).css("cursor", "pointer");
         $(this).animate({ width: "90px", height: "90px" }, "slow");
     }, function() {
         $(this).animate({ width: "80px", height: "80px" }, "slow");
     }); 
-
-    $(".navi-engineer").click(function() {
-        $iframe = $("#iframe_display_body");
-        if ($iframe.length) {
-            $iframe.attr('src', engineer.html);
-            return false;
-        }
-        return true;
-    });
 
     $(".navi-writer").hover(function() {
         $(this).css("cursor", "pointer");

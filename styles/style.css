@@ -1,5 +1,9 @@
 .main-profile-pic-block {
-    height: 350px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    height: 250px;
     width: 100%;
     background-color: #34D8DB;
 }
@@ -17,53 +21,19 @@
     z-index: 10;
 }
 
-.navi-student {
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    background-color: #FFDB4C;
-    text-align: center;
-    z-index: 5;
-    position: absolute;
-    left: 400px;
-    top: 50px;
-    -webkit-animation-name: navi-student-effect; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
-    animation: navi-student-effect 2s ease;
+.link-highlight {
+    font-weight: bold;
+    color: #568FFF;
+    text-decoration: none;
 }
 
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes navi-student-effect {
-    0% {
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    100% {
-        position: absolute;
-        left: 400px;
-        top: 50px;
-    }
+.link-highlight:hover {
+    cursor: pointer;
+    color: #72E55B;
+    text-decoration: none;
 }
 
-/* Standard syntax */
-@keyframes navi-student-effect {
-    0% {
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    100% {
-        position: absolute;
-        left: 400px;
-        top: 50px;
-    }
-}
-
-
-.navi-engineer {
+.navi-experience {
     height: 80px;
     width: 80px;
     border-radius: 50%;
@@ -71,15 +41,15 @@
     text-align: center;
     z-index: 5;
     position: absolute;
-    left: 270px;
-    top: 100px;
-    -webkit-animation-name: navi-engineer-effect; /* Safari 4.0 - 8.0 */
+    left: 360px;
+    top: 40px;
+    -webkit-animation-name: navi-experience-effect; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
-    animation: navi-engineer-effect 2s ease;
+    animation: navi-experience-effect 2s ease;
 }
 
 /* Safari 4.0 - 8.0 */
-@-webkit-keyframes navi-engineer-effect {
+@-webkit-keyframes navi-experience-effect {
     0% {
         position: absolute;
         top: 20%;
@@ -88,13 +58,13 @@
     }
     100% {
         position: absolute;
-        left: 270px;
-        top: 100px;
+        left: 360px;
+        top: 40px;
     }
 }
 
 /* Standard syntax */
-@keyframes navi-engineer-effect {
+@keyframes navi-experience-effect {
     0% {
         position: absolute;
         top: 20%;
@@ -103,8 +73,8 @@
     }
     100% {
         position: absolute;
-        left: 270px;
-        top: 100px;
+        left: 360px;
+        top: 40px;
     }
 }
 
@@ -116,9 +86,9 @@
     text-align: center;
     z-index: 5;
     position: absolute;
-    right: 400px;
-    top: 50px;
-    -webkit-animation-name: navi-engineer-effect; /* Safari 4.0 - 8.0 */
+    right: 360px;
+    top: 40px;
+    -webkit-animation-name: navi-writer-effect; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
     animation: navi-writer-effect 2s ease backwards;
 }
@@ -133,8 +103,8 @@
     }
     100% {
         position: absolute;
-        right: 400px;
-        top: 50px;
+        right: 360px;
+        top: 40px;
     }
 }
 
@@ -148,56 +118,10 @@
     }
     to {
         position: absolute;
-        right: 400px;
-        top: 50px;
+        right: 360px;
+        top: 40px;
     }
 }
-
-.navi-entrepreneur {
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    background-color: #33CC4D;
-    text-align: center;
-    z-index: 5;
-    position: absolute;
-    right: 275px;
-    top: 100px;
-    -webkit-animation-name: navi-entrepreneur-effect; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
-    animation: navi-entrepreneur-effect 2s ease;
-}
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes navi-entrepreneur-effect {
-    0% {
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    100% {
-        position: absolute;
-        right: 275px;
-        top: 100px;
-    }
-}
-
-/* Standard syntax */
-@keyframes navi-entrepreneur-effect {
-    0% {
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    100% {
-        position: absolute;
-        right: 275px;
-        top: 100px;
-    }
-}
-
 
 .navi-art-lover {
     height: 80px;
@@ -208,7 +132,7 @@
     z-index: 5;
     position: absolute;
     left: 150px;
-    top: 200px;
+    top: 140px;
     -webkit-animation-name: navi-art-lover-effect; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
     animation-name: navi-art-lover-effect;
@@ -226,7 +150,7 @@
     100% {
         position: absolute;
         left: 150px;
-        top: 200px;
+        top: 140px;
     }
 }
 
@@ -241,7 +165,7 @@
     100% {
         position: absolute;
         left: 150px;
-        top: 200px;
+        top: 140px;
     }
 }
 
@@ -254,7 +178,7 @@
     z-index: 5;
     position: absolute;
     right: 150px;
-    top: 200px;
+    top: 140px;
     -webkit-animation-name: navi-kittyMother-effect; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
     animation: navi-kittyMother-effect 2s ease;
@@ -271,7 +195,7 @@
     100% {
         position: absolute;
         right: 150px;
-        top: 200px;
+        top: 140px;
     }
 }
 
@@ -286,13 +210,13 @@
     100% {
         position: absolute;
         right: 150px;
-        top: 200px;
+        top: 140px;
     }
 }
 
 .hi-logo {
     position: absolute;
-    top: 200px;
+    top: 100px;
     width: 100%;
     height: 150px;
 }
@@ -375,85 +299,78 @@
 }
 
 .iframe-display-body {
+    position: absolute;
+    top: 250px;
     width: 100%;
     height: 100vh;
     border: none;
     // background-color: #A7A3C7;
 }
 
-.engineer-section {
-    width: 60%;
-    margin: auto;
-    padding-top: 40px;
-    // TODO: update later
-    z-index: 6;
-    background-color: #A3C7A7;
+.page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
 }
 
-.engineer-pic-container {
-    display: inline-block;
-    width: 40%;
-    padding: 15px;
-    // TODO: update later
-    background-color: yellow;
-}
-
-.engineer-text-container {
-    display: inline-block;
-    width: 60%;
-    padding: 15px;
-    // TODO: update later
-    background-color: green;
+.experience-page {
+    //width: 100%;
+    //height: 100vh;
 }
 
 .experience-section {
-    margin-top: 25px;
-    height: 220px;
-    width: 60%;
+    background-color: #F2F4F4;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 240px;
+    width: 65%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 .experience-text-container-left {
-    float: left;
-    height: 200px;
+    height: 220px;
     width: 80%;
+    float: left;
 }
 
 .experience-text-container-right {
-    position: relative;
-    float: right;
-    height: 200px;
+    height: 220px;
     width: 80%;
+    float: right;
 }
 
 .experience-text-main {
-    height: 160px;
-    width: 100%;
+    height: 180px;
+    width: 95%;
     padding-bottom: 15px;
 }
 
 .experience-text-title-container {
-    height: 30px;
 }
 
 .experience-text-title-content {
-    color: #5500FF;
-    font-size: 28px;
-    float: left;
+    color: #568FFF;
+    font-size: 22px;
 }
 
 .experience-text-title-subcontent {
-    font-size: 18px;
-    float: left;
+    font-size: 16px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
 .experience-text-position {
-    font-size: 22px;
-    float: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.experience-text-intro {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
 }
 
 .experience-pic-container-left {
@@ -468,37 +385,56 @@
     width: 20%;
 }
 
+.experience-pic {
+    height: 160px;
+    width: 160px;
+}
+
 .easyrent-logo-pic {
-    height: 200px;
-    width: 100%;
     background-color: blue;
 }
 
 .tca-logo-pic {
-    height: 200px;
-    width: 100%;
     background-image: url("../images/experiences/tca-logo.png");
     background-size: 100% 100%;
 }
 
 .mode-logo-pic {
-    height: 200px;
-    width: 100%;
     background-image: url("../images/experiences/mode-logo.png");
     background-size: 100% 100%;
 }
 
 .fenwick-logo-pic {
-    height: 200px;
-    width: 100%;
     background-image: url("../images/experiences/fenwick-logo.png");
     background-size: 100% 100%;
 }
 
-.writer-page-intro-container {
+.caltech-experience-logo-pic {
+    background-image: url("../images/experiences/caltech-experience-logo.png");
+    background-size: 100% 100%;
+}
+
+.stanford-experience-logo-pic {
+    background-image: url("../images/experiences/stanford-experience-logo.png");
+    background-size: 100% 100%;
+}
+
+.ucsd-experience-logo-pic {
+    background-image: url("../images/experiences/ucsd-experience-logo.png");
+    background-size: 100% 100%;
+}
+
+.bupt-experience-logo-pic {
+    background-image: url("../images/experiences/bupt-experience-logo.png");
+    background-size: 100% 100%;
+}
+
+.page-intro-container {
     height: 120px;
     width: 80%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
 }
 
 .writer-section {
@@ -598,7 +534,7 @@
 }
 
 .writer-text-title-content {
-    color: #5500FF;
+    color: #568FFF;
     font-size: 28px;
     float: left;
 }
@@ -660,20 +596,14 @@
 .kittyMother-page {
     width: 100%;
     height: 100vh;
-    background-color: #E2E2E2;
-}
-
-.kittyMother-page-intro-container {
-    height: 150px;
-    width: 80%;
-    margin: auto;
+    background-color: #F2F4F4;
 }
 
 .page-title {
     text-align: center;
     font-size: 28px;
-    font-family: Comic Sans MS;
-    color: #5500FF;
+    //font-family: Comic Sans MS;
+    color: #568FFF;
     padding-bottom: 10px;
 }
 
@@ -684,7 +614,7 @@
 
 .kitty-name {
     font-weight: bold;
-    color: #5500FF;
+    color: #568FFF;
 }
 
 .kitty-section-large {
