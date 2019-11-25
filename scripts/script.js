@@ -8,9 +8,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
     
     $(".navi-item").hover(function() {
-        $(this).animate({ opacity: "0.7", fontSize: "28px" }, "1500");
+        $(this).animate({ fontSize: "28px" }, "1500");
     }, function() {
-        $(this).animate({ opacity: "1", fontSize: "22px" }, "300");
+        $(this).animate({ fontSize: "22px" }, "300");
     });
 
     $("#pitton").hover(function() {

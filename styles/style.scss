@@ -1,15 +1,18 @@
 $pw-blue: #63B6F8;
-$pw-green: #72E55B;
+$pw-green: #2ECC71;
+$pw-green-1: #8EF863;
+
+$pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
 
 .main-profile-pic-block {
     position: fixed;
     top: 0;
     left: 0;
     z-index: 3;
-    height: 250px;
+    height: 230px;
     width: 100%;
     background-color: $pw-blue;
-    // background-color: #34D8DB;
+    overflow: hidden;
 }
 
 .main-profile-pic {
@@ -19,7 +22,7 @@ $pw-green: #72E55B;
     background-image: url("../images/profiles/lydia.jpg");
     background-size: 100% 100%;
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
@@ -27,14 +30,14 @@ $pw-green: #72E55B;
 
 .link-highlight {
     font-weight: bold;
-    color: $pw-blue;
+    color: $pw-green;
     // color: #568FFF;
     text-decoration: none;
 }
 
 .link-highlight:hover {
     cursor: pointer;
-    color: $pw-green;
+    color: $pw-blue;
     text-decoration: none;
 }
 
@@ -45,11 +48,12 @@ $pw-green: #72E55B;
     color: #FFFFFF;
     text-align: center;
     font-size: 24px;
-    font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
+    font-family: $pw-font-main;
 }
 
 .navi-item:hover {
     cursor: pointer;
+    color: $pw-green-1;
 }
 
 @keyframes font-enlarge {
@@ -242,60 +246,60 @@ $pw-green: #72E55B;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: hi-logo-fill 3s ease forwards 4.5s;
 }
 
 #hi-logo path {
-    stroke-width: 2px;
+    stroke-width: 2.2px;
     stroke: white;
 }
 
 #hi-logo path:nth-child(1) {
-    stroke-dasharray: 855;
-    stroke-dashoffset: 855;
-    animation: hi-logo-animation 2.5s ease forwards;
+    stroke-dasharray: 684;
+    stroke-dashoffset: 684;
+    animation: hi-logo-animation 2.5s ease forwards, hi-logo-fill 2s ease both 4.5s;
+    
 }
 
 #hi-logo path:nth-child(2) {
-    stroke-dasharray: 198.1;
-    stroke-dashoffset: 198.1;
-    animation: hi-logo-animation 0.8s ease forwards 1s;
+    stroke-dasharray: 158.5;
+    stroke-dashoffset: 158.5;
+    animation: hi-logo-animation 0.8s ease forwards 1s, hi-logo-fill 2s ease both 4.5s;
 }
 
 #hi-logo path:nth-child(3) {
-    stroke-dasharray: 56.4;
-    stroke-dashoffset: 56.4;
-    animation: hi-logo-animation 0.4s ease forwards 1.8s;
+    stroke-dasharray: 45.1;
+    stroke-dashoffset: 45.1;
+    animation: hi-logo-animation 0.4s ease forwards 1.8s, hi-logo-fill 2s ease both 4.8s;
 }
 
 #hi-logo path:nth-child(4) {
-    stroke-dasharray: 532.4;
-    stroke-dashoffset: 532.4;
-    animation: hi-logo-animation 1.5s ease forwards 2.2s;
+    stroke-dasharray: 425.9;
+    stroke-dashoffset: 425.9;
+    animation: hi-logo-animation 1.5s ease forwards 2.2s, hi-logo-fill 2s ease both 5.0s;
 }
 
 #hi-logo path:nth-child(5) {
-    stroke-dasharray: 332;
-    stroke-dashoffset: 332;
-    animation: hi-logo-animation 1.6s ease forwards 2.6s;
+    stroke-dasharray: 265.6;
+    stroke-dashoffset: 265.6;
+    animation: hi-logo-animation 1.6s ease forwards 2.6s, hi-logo-fill 2s ease both 5.3s;
 }
 
 #hi-logo path:nth-child(6) {
-    stroke-dasharray: 443.1;
-    stroke-dashoffset: 443.1;
-    animation: hi-logo-animation 2.2s ease forwards 3s;
+    stroke-dasharray: 354.5;
+    stroke-dashoffset: 354.5;
+    animation: hi-logo-animation 2.2s ease forwards 3s, hi-logo-fill 3s ease both 5.6s;
 }
 
 #hi-logo path:nth-child(7) {
-    stroke-dasharray: 489.8;
-    stroke-dashoffset: 489.8;
-    animation: hi-logo-animation 1.5s ease forwards 4s;
+    stroke-dasharray: 391.8;
+    stroke-dashoffset: 391.8;
+    animation: hi-logo-animation 1.5s ease forwards 4s, hi-logo-fill 2s ease both 6.2s;
 }
 
 #hi-logo path:nth-child(8) {
-    stroke-dasharray: 294.5;
-    stroke-dashoffset: 294.5;
-    animation: hi-logo-animation 2s ease forwards 4.5s;
+    stroke-dasharray: 235.6;
+    stroke-dashoffset: 235.6;
+    animation: hi-logo-animation 2s ease forwards 4.5s, hi-logo-fill 2s ease both 6.5s;
 }
 
 @keyframes hi-logo-animation {
@@ -310,13 +314,14 @@ $pw-green: #72E55B;
     }
 
     100% {
-        fill: white;
+        fill: #FFFFFF;
     }
 }
 
 .iframe-display-body {
     position: absolute;
-    top: 250px;
+    top: 230px;
+    left: 0;
     width: 100%;
     height: 100vh;
     border: none;
@@ -327,7 +332,7 @@ $pw-green: #72E55B;
     position: absolute;
     top: 0;
     left: 0;
-    font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
+    font-family: $pw-font-main;
 }
 
 .experience-page {
@@ -458,11 +463,11 @@ $pw-green: #72E55B;
 }
 
 .page-intro-container {
-    height: 120px;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 25px;
+    margin-bottom: 35px;
 }
 
 .writer-section {
@@ -588,6 +593,7 @@ $pw-green: #72E55B;
 .writer-text-intro {
     padding-top: 10px;
     font-size: 15.5px;
+    line-height: 20px;
 }
 
 .read-full-article-container {
@@ -635,14 +641,24 @@ $pw-green: #72E55B;
 }
 
 .page-intro {
+    line-height: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
     font-size: 16px;
-    font-family: roboto, helvetica, sans-serif;
+    font-family: $pw-font-main;
 }
 
-.kitty-name {
+.page-intro-highlight {
     font-weight: bold;
+    color: $pw-green;
+}
+
+#pitton:hover {
     color: $pw-blue;
-    //color: #568FFF;
+}
+
+#dublin:hover {
+    color: $pw-blue;
 }
 
 .kitty-section-large {
