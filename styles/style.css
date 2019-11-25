@@ -35,8 +35,6 @@
 }
 
 .navi-item {
-  width: 260px;
-  height: 40px;
   color: #FFFFFF;
   text-align: center;
   font-size: 24px;
@@ -48,19 +46,11 @@
   color: #8EF863;
 }
 
-@keyframes font-enlarge {
-  from {
-    font-size: 22px;
-  }
-  to {
-    font-size: 28px;
-  }
-}
 .navi-experience {
   z-index: 5;
   position: absolute;
-  left: 360px;
-  top: 40px;
+  left: 30%;
+  top: 10%;
   -webkit-animation-name: navi-experience-effect;
   /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 2s;
@@ -78,8 +68,8 @@
   }
   100% {
     position: absolute;
-    left: 360px;
-    top: 40px;
+    left: 30%;
+    top: 10%;
   }
 }
 /* Standard syntax */
@@ -92,15 +82,15 @@
   }
   100% {
     position: absolute;
-    left: 360px;
-    top: 40px;
+    left: 30%;
+    top: 10%;
   }
 }
 .navi-writer {
   z-index: 5;
   position: absolute;
-  right: 360px;
-  top: 40px;
+  right: 30%;
+  top: 10%;
   -webkit-animation-name: navi-writer-effect;
   /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 2s;
@@ -118,8 +108,8 @@
   }
   100% {
     position: absolute;
-    right: 360px;
-    top: 40px;
+    right: 30%;
+    top: 10%;
   }
 }
 /* Standard syntax */
@@ -132,15 +122,15 @@
   }
   to {
     position: absolute;
-    right: 360px;
-    top: 40px;
+    right: 30%;
+    top: 10%;
   }
 }
 .navi-art-lover {
   z-index: 5;
   position: absolute;
-  left: 150px;
-  top: 140px;
+  left: 15%;
+  top: 45%;
   -webkit-animation-name: navi-art-lover-effect;
   /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 2s;
@@ -159,8 +149,8 @@
   }
   100% {
     position: absolute;
-    left: 150px;
-    top: 140px;
+    left: 15%;
+    top: 45%;
   }
 }
 /* Standard syntax */
@@ -173,15 +163,15 @@
   }
   100% {
     position: absolute;
-    left: 150px;
-    top: 140px;
+    left: 15%;
+    top: 45%;
   }
 }
 .navi-kittyMother {
   z-index: 5;
   position: absolute;
-  right: 150px;
-  top: 140px;
+  right: 15%;
+  top: 45%;
   -webkit-animation-name: navi-kittyMother-effect;
   /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 2s;
@@ -199,8 +189,8 @@
   }
   100% {
     position: absolute;
-    right: 150px;
-    top: 140px;
+    right: 15%;
+    top: 45%;
   }
 }
 /* Standard syntax */
@@ -213,8 +203,8 @@
   }
   100% {
     position: absolute;
-    right: 150px;
-    top: 140px;
+    right: 15%;
+    top: 45%;
   }
 }
 .hi-logo {
@@ -332,18 +322,16 @@
   height: 240px;
   width: 75%;
   float: left;
-  padding-left: 30px;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  padding-left: 4%;
+  padding-top: 2%;
 }
 
 .experience-text-container-right {
   height: 240px;
   width: 75%;
   float: right;
-  padding-right: 30px;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  padding-right: 4%;
+  padding-top: 2%;
 }
 
 .experience-text-main {
@@ -377,31 +365,28 @@
 .experience-pic-container-left {
   position: relative;
   float: left;
-  width: 18%;
-  padding-top: 40px;
-  padding-left: 30px;
+  width: 15%;
+  padding-left: 4%;
+  padding-top: 6%;
 }
 
 .experience-pic-container-right {
   position: relative;
   float: right;
-  width: 18%;
-  padding-right: 10px;
-  padding-top: 40px;
+  width: 15%;
+  padding-right: 4%;
+  padding-top: 6%;
 }
 
 .experience-pic {
-  height: 150px;
-  width: 150px;
+  width: 85%;
+  height: auto;
+  max-height: 160px;
+  max-width: 160px;
 }
 
 .easyrent-logo-pic {
   background-color: blue;
-}
-
-.tca-logo-pic {
-  background-image: url("../images/experiences/tca-logo.png");
-  background-size: 100% 100%;
 }
 
 .mode-logo-pic {
@@ -633,12 +618,6 @@
   width: 40%;
 }
 
-/*
-.kitty-section-large-subcontainer {
-    width: 40%;
-    margin: auto;
-}
-*/
 .kitty-pic-large {
   width: 50%;
   height: auto;
@@ -666,10 +645,6 @@
   filter: grayscale(70%);
 }
 
-.kitty-pic-regular-1 {
-  clear: left;
-}
-
 .kitty-pic-regular {
   margin: 0;
   float: left;
@@ -686,74 +661,51 @@
 }
 
 .kitty-pic-regular-1 {
-  background-image: url("../images/kitties/3.JPG");
-  background-size: 100% 100%;
+  clear: left;
   animation: fade-in-effect 4s ease both 0.5s;
 }
 
 .kitty-pic-regular-2 {
-  background-image: url("../images/kitties/4.JPG");
-  background-size: 100% 100%;
   animation: fade-in-effect 4s ease both 0.8s;
 }
 
 .kitty-pic-regular-3 {
-  background-image: url("../images/kitties/5.JPG");
-  background-size: 100% 100%;
   animation: fade-in-effect 4s ease both 1.1s;
 }
 
 .kitty-pic-regular-4 {
-  background-image: url("../images/kitties/6.JPG");
-  background-size: 100% 100%;
   animation: fade-in-effect 4s ease both 1.4s;
 }
 
 .kitty-pic-regular-5 {
-  background-image: url("../images/kitties/7.JPG");
-  background-size: 100% 100%;
   animation: fade-in-effect 4s ease both 1.7s;
 }
 
 .kitty-pic-regular-6 {
-  background-image: url("../images/kitties/8.JPG");
-  background-size: 100% 100%;
   animation: fade-in-effect 4s ease both 2s;
 }
 
 .kitty-pic-regular-7 {
-  background-image: url("../images/kitties/9.JPG");
-  background-size: 100% 100%;
   animation: fade-in-effect 4s ease both 2s;
 }
 
 .kitty-pic-regular-8 {
-  background-image: url("../images/kitties/10.JPG");
-  background-size: 100% 100%;
   animation: fade-in-effect 4s ease both 1.7s;
 }
 
 .kitty-pic-regular-9 {
-  background-image: url("../images/kitties/11.JPG");
-  background-size: 100% 100%;
   animation: fade-in-effect 4s ease both 1.4s;
 }
 
 .kitty-pic-regular-10 {
-  background-image: url("../images/kitties/12.JPG");
-  background-size: 100% 100%;
   animation: fade-in-effect 4s ease both 1.1s;
 }
 
 .kitty-pic-regular-11 {
-  background-image: url("../images/kitties/13.JPG");
-  background-size: 100% 100%;
   animation: fade-in-effect 4s ease both 0.8s;
 }
 
 .kitty-pic-regular-12 {
-  background-image: url("../images/kitties/14.PNG");
-  background-size: 100% 100%;
   animation: fade-in-effect 4s ease both 0.5s;
 }
 
