@@ -6,50 +6,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
     for (let i = 0; i < logo.length; i++) {
         console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);
     }
-    //
-    $(".navi-experience").hover(function() {
-        $(this).css("cursor", "pointer");
-        $(this).animate({ width: "90px", height: "90px" }, "slow");
-    }, function() {
-        $(this).animate({ width: "80px", height: "80px" }, "slow");
-    }); 
-
-    $(".navi-writer").hover(function() {
-        $(this).css("cursor", "pointer");
-        $(this).animate({ width: "90px", height: "90px" }, "slow");
-    }, function() {
-        $(this).animate({ width: "80px", height: "80px" }, "slow");
-    });
-
-/*
-    $(".navi-writer").click(function() {
-        console.log("In writer,");
-        var iframe = $("iframe").attr('name', "iframe_display_body");
-        if (iframe.length) {
-            iframe.attr('src', "writer.html");
-            return false;
-        }
-        return true;
-    });
-*/
-
-    $(".navi-art-lover").hover(function() {
-        $(this).css("cursor", "pointer");
-        $(this).animate({ width: "90px", height: "90px" }, "slow");
-    }, function() {
-        $(this).animate({ width: "80px", height: "80px" }, "slow");
-    });
     
-    $(".navi-art-lover").click(function() {
-        window.location = $(this).find("a").attr("href");
-        return false;
-    });    
-
-    $(".navi-kittyMother").hover(function() {
-        $(this).css("cursor", "pointer");
-        $(this).animate({ width: "90px", height: "90px" }, "slow");
+    $(".navi-item").hover(function() {
+        $(this).animate({ opacity: "0.7", fontSize: "28px" }, "1500");
     }, function() {
-        $(this).animate({ width: "80px", height: "80px" }, "slow");
+        $(this).animate({ opacity: "1", fontSize: "22px" }, "300");
     });
 
     $("#pitton").hover(function() {
@@ -68,9 +29,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     $(".main-profile-pic").hover(function() {
         $(this).css("cursor", "pointer");
-        $(this).animate({ width: "115px", height: "115px" }, "slow");
+        $(this).animate({ width: "115px", height: "115px" }, "1500");
     }, function() {
-        $(this).animate({ width: "100px", height: "100px" }, "slow");
+        $(this).animate({ width: "100px", height: "100px" }, "300");
     });   
 
     $(".main-profile-pic").click(function() {
