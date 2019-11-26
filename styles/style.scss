@@ -1,4 +1,5 @@
 $pw-blue: #63B6F8;
+$pw-blue-1: #5DADE2;
 $pw-green-0: #27AE60;
 $pw-green: #2ECC71;
 $pw-green-1: #8EF863;
@@ -12,7 +13,7 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
     z-index: 3;
     height: 230px;
     width: 100%;
-    background-color: $pw-blue;
+    background-image: linear-gradient($pw-blue, $pw-blue-1);
     overflow: hidden;
 }
 
@@ -105,7 +106,7 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
     position: absolute;
     -webkit-animation-name: navi-writer-effect; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
-    animation: navi-writer-effect 5s linear both;
+    animation: navi-writer-effect 2s both;
 }
 
 /* Safari 4.0 - 8.0 */
@@ -173,7 +174,7 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
     position: absolute;
     -webkit-animation-name: navi-kittyMother-effect; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
-    animation: navi-kittyMother-effect 5s ease both;
+    animation: navi-kittyMother-effect 2s both;
 }
 
 /* Safari 4.0 - 8.0 */
@@ -286,12 +287,16 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
     }
 }
 
+#iframe_container {
+    padding:0px; margin:0 auto; width: 100%; height: 100%;
+}
+
 .iframe-display-body {
     position: absolute;
     top: 230px;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     border: none;
     // background-color: #A7A3C7;
 }
@@ -445,11 +450,10 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
 
 .writer-section {
     margin-top: 25px;
-    height: 200px;
+    height: 240px;
     width: 65%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 50px;
     // TODO: update later
     // background-color: #B5C7A7;
 }
@@ -481,14 +485,19 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
 }
 
 .writer-pic-container {
-    height: 220px;
-    width: 220px;
+    position: relative;
     float: left;
+    width: 25%;
+    padding-left: 4%;
+    padding-top: 4%;
 }
 
 .writer-pic {
-    height: 170px;
-    width: 175px;
+    width: 95%;
+    height: auto;
+    max-height: 180px;
+    max-width: 200px;
+    border-radius: 20%;
 }
 
 .nobel-prize-baltimore-pic {
@@ -520,14 +529,15 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
 }
 
 .writer-text-container {
-    position: relative;
-    padding-left: 240px;
-    height: 180px;
+    height: 240px;
     width: 70%;
+    float: right;
+    padding-right: 4%;
+    padding-top: 2%;
 }
 
 .writer-text-main {
-    height: 140px;
+    height: 75%;
     width: 100%;
     padding-bottom: 15px;
 }
@@ -732,6 +742,165 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
     animation: fade-in-effect 4s ease both 0.5s;
 }
 
+/* below - new effect for kitty pictures*/
+$partSize: 150px;
+$margins: 2px;
+$rows: 4; //change this also in js
+$cols: 4; //change this also in js
+// TODO, need to adjust perspective for responsive design
+// perspective: calc( 720px + ( 100vw - 320px ) * 7 );
+$perspective: 700px;
+$transTime: 0.3s;
+$border-radius: 10px;
+$shadow-size: 12px;
+$demo-bg: linear-gradient(60deg, #5B5893, darken(#6A66A6, 30%));
+$gallery-bg: #eee;
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.demo {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+  background: $demo-bg;
+  
+  &__gallery {
+    width: $cols * $partSize + 2 * $cols * $margins + 2 * $margins;
+    height: $rows * $partSize + 2 * $rows * $margins + 2 * $margins;
+    padding: $margins;
+    flex-shrink: 0;
+    
+    background: $gallery-bg;
+    
+    perspective: $perspective;
+    border-radius: $border-radius;
+  }
+  
+  &__placeholder {
+    width: $partSize;
+    height: $partSize;
+    margin: $margins;
+    float: left;
+    background-color: lightslategrey;
+    border-radius: $border-radius;
+  }
+  
+  &__part {
+    position: relative;
+    float: left;
+    
+    width: $partSize;
+    height: $partSize;
+    margin: $margins;
+  
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    transition: all $transTime ease-in-out;
+   
+    &:hover .demo__part-front {
+      box-shadow: 0 0 $shadow-size black;
+      transform: scale(0.96);
+      
+      &:after {
+        opacity: 0;
+      }
+    }    
+  }
+  
+  &__part-front, &__part-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    overflow: hidden;    
+    backface-visibility: hidden;
+    border-radius: $border-radius;
+    cursor: pointer;
+    
+    
+  }
+  
+  &__part-front {
+    background-color: lightslategrey;
+    background-size: cover;
+    background-position: center;
+    
+    transform: rotateX(0deg);
+    transition: all $transTime / 1.5 ease;
+    
+    &:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      
+      width: 100%;
+      height: 100%;
+      
+      background-color: black;
+      
+      content: "";
+      opacity: 0.5;      
+      transition: all $transTime / 1.5 ease;
+    }
+  }
+  
+  &__part-back {
+    transform: rotateY(180deg) rotateX(0deg);
+  }
+  
+  &__part-back-inner {
+    width: $partSize * $cols + $margins * ($cols - 1) * 2;
+    height: $partSize * $rows + $margins * ($rows - 1) * 2;    
+    
+    background-image: url(http://kirillkiyutin.com/img/nyc/nyc1.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    backface-visibility: hidden;
+  }
+  
+  &__help {
+    margin-bottom: 7px;
+    font-size: 30px;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    
+    color: white;
+    
+    & a {
+      color: white;
+      
+      &:hover {
+        color: #E39999;
+      }
+    }
+  }
+}
+
+@for $row from 1 through $rows {
+  @for $col from 1 through $cols {
+    .demo__part-#{$row}-#{$col} .demo__part-back-inner {
+      transform: translate( -($col - 1) * ($partSize + $margins * 2), -($row - 1) * ($partSize + $margins * 2) );
+    }
+  }
+}
+
+.show-front {
+  transform: none;
+}
+
+
+/* above - new effect for kitty pictures*/
+
 .art-section {
     background-color: #FFFFFF;
     margin-top: 35px;
@@ -786,7 +955,55 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
     }
 }
 
+.painting-internal-frame {
+    border: solid 15px;
+    border-bottom-color:#ffe;
+    border-left-color:#eed;
+    border-right-color:#eed;
+    border-top-color:#ccb;
+    max-height:100%;
+    max-width:100%;
+}
+
+.painting-external-frame {
+  background-color:#ddc;
+  border:solid 5vmin #eee;
+  border-bottom-color:#fff;
+  border-left-color:#eee;
+  border-radius:2px;
+  border-right-color:#eee;
+  border-top-color:#ddd;
+  box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
+  box-sizing:border-box;
+  display:inline-block;
+  margin:10vh 10vw;
+  padding:8vmin;
+  position:relative;
+  text-align:center;
+  &:before {
+    border-radius:2px;
+    bottom:-2vmin;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,.25) inset;
+    content:"";
+    left:-2vmin;
+    position:absolute;
+    right:-2vmin;
+    top:-2vmin;
+  }
+  &:after {
+    border-radius:2px;
+    bottom:-2.5vmin;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
+    content:"";
+    left:-2.5vmin;
+    position:absolute;
+    right:-2.5vmin;
+    top:-2.5vmin;
+  }
+}
+
 .previous, .next {
+    z-index: 5;
     cursor: pointer;
     position: absolute;
     top: 50%;
