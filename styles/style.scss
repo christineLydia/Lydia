@@ -1,4 +1,5 @@
 $pw-blue: #63B6F8;
+$pw-green-0: #27AE60;
 $pw-green: #2ECC71;
 $pw-green-1: #8EF863;
 
@@ -38,6 +39,18 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
 .link-highlight:hover {
     cursor: pointer;
     color: $pw-blue;
+    text-decoration: none;
+}
+
+.title-highlight {
+    font-weight: bold;
+    color: $pw-blue;
+    text-decoration: none;
+}
+
+.title-highlight:hover {
+    cursor: pointer;
+    color: $pw-green;
     text-decoration: none;
 }
 
@@ -362,8 +375,8 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
 
 .experience-text-title-content {
     color: $pw-blue;
-    // color: #568FFF;
     font-size: 22px;
+    font-weight: bold;
 }
 
 .experience-text-title-subcontent {
@@ -375,6 +388,12 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
 .experience-text-position {
     font-size: 18px;
     font-weight: bold;
+}
+
+.experience-period {
+    font-size: 16px;
+    color: $pw-green;
+    font-weight: normal;
 }
 
 .experience-text-intro {
@@ -615,7 +634,7 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
 
 .page-title {
     text-align: center;
-    font-size: 28px;
+    font-size: 26px;
     color: $pw-blue;
     // color: #568FFF;
     padding-bottom: 10px;
