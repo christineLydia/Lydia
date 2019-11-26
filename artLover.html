@@ -16,49 +16,41 @@
         <div class="page artLover-page">
             <div class="artLover-page-intro-container">
                 <div class="page-title">
-                    I am an art lover who paints.
+                    I'm a soprano sining classical music, and a painteer learner.
                 </div>
                 <div class="page-intro">
-                    <span id="pitton" class="kitty-name">Pitton</span> and <span id="dublin" class="kitty-name">Dublin</span> joined my family in 2018. The two boys are cute, considerate and loving. Pitton is so smart that he can quickly learn how to turn on and off the lights at home, and sometimes he is watching me code and play computer games. I am thinking he is actually interested and learning!<br>
-                    Dublin is like a little kid and he loves to follow me everywhere anytime at home. Sometimes I wake up in the morning feeling something heavy on my chest, and it is him, purring.
+                    I sing....
                 </div>
             </div>
-            <div class="kitty-section-large">
-                <div class="kitty-pic kitty-pic-large-pitton">
+            <div class="art-section">
+                <div class="paintings-container">
+                    <div class="imageSlides paintings-fade">
+                        <img src="./images/kitties/1.JPG" class="paintings-pic">
+                    </div>
+                    <div class="imageSlides paintings-fade">
+                        <img src="./images/kitties/2.JPG" class="paintings-pic">
+                    </div>
+                    <div class="imageSlides paintings-fade">
+                        <img src="./images/kitties/3.JPG" class="paintings-pic">
+                    </div>
+                    <div class="imageSlides paintings-fade">
+                        <img src="./images/kitties/4.JPG" class="paintings-pic">
+                    </div>
+                    <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
-                <div class="kitty-pic kitty-pic-large-dublin">
+                <div class="image-select-dot">
+                    <span class="select-dot" onclick="selectCurrentSlide(1)"></span>
+                    <span class="select-dot" onclick="selectCurrentSlide(2)"></span>
+                    <span class="select-dot" onclick="selectCurrentSlide(3)"></span>
+                    <span class="select-dot" onclick="selectCurrentSlide(4)"></span>
                 </div>
             </div>
-            <table>
-                <tr class="kitty-section-regular">
-                    <th class="kitty-pic kitty-pic-regular-1">
-                    </th>
-                    <th class="kitty-pic kitty-pic-regular-2">
-                    </th>
-                    <th class="kitty-pic kitty-pic-regular-3">
-                    </th>
-                    <th class="kitty-pic kitty-pic-regular-4">
-                    </th>
-                    <th class="kitty-pic kitty-pic-regular-5">
-                    </th>
-                    <th class="kitty-pic kitty-pic-regular-6">
-                    </th>
-                </tr>
-                <tr class="kitty-section-regular">
-                    <th class="kitty-pic kitty-pic-regular-7">
-                    </th>
-                    <th class="kitty-pic kitty-pic-regular-8">
-                    </th>
-                    <th class="kitty-pic kitty-pic-regular-9">
-                    </th>
-                    <th class="kitty-pic kitty-pic-regular-10">
-                    </th>
-                    <th class="kitty-pic kitty-pic-regular-11">
-                    </th>
-                    <th class="kitty-pic kitty-pic-regular-12">
-                    </th>
-                </tr>
-            </table>
+            <div class="music-box">
+                <p class="music-text"> Johann Sebastian Bach Air on the G String From Suite No. 3 </p>
+                <audio id="orchestra-background-music" src="./music/Air-on-a-g-string.mp3" controls>
+                </audio>
+            </div>
         </div>
     </body>
 </html>
