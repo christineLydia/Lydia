@@ -1,0 +1,1017 @@
+@media (max-width: 751px) {
+  .main-profile-pic-block {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    height: 230px;
+    width: 100%;
+    background-image: linear-gradient(#63B6F8, #5DADE2);
+    overflow: hidden;
+  }
+
+  .main-profile-pic {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-image: url("../images/profiles/lydia.jpg");
+    background-size: 100% 100%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+
+  .navi-item {
+    font-size: 22px;
+  }
+
+  .navi-experience {
+    z-index: 5;
+    position: absolute;
+    -webkit-animation-name: navi-experience-effect;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s;
+    /* Safari 4.0 - 8.0 */
+    animation: navi-experience-effect 2s ease both;
+  }
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes navi-experience-effect {
+    0% {
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    100% {
+      left: 25%;
+      top: 10%;
+    }
+  }
+  /* Standard syntax */
+  @keyframes navi-experience-effect {
+    0% {
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    100% {
+      left: 25%;
+      top: 10%;
+    }
+  }
+  .navi-writer {
+    z-index: 5;
+    position: absolute;
+    -webkit-animation-name: navi-writer-effect;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s;
+    /* Safari 4.0 - 8.0 */
+    animation: navi-writer-effect 2s both;
+  }
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes navi-writer-effect {
+    0% {
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    100% {
+      right: 25%;
+      top: 10%;
+    }
+  }
+  /* Standard syntax */
+  @keyframes navi-writer-effect {
+    from {
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    to {
+      right: 25%;
+      top: 10%;
+    }
+  }
+  .navi-art-lover {
+    z-index: 5;
+    position: absolute;
+    -webkit-animation-name: navi-art-lover-effect;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s;
+    /* Safari 4.0 - 8.0 */
+    animation: navi-art-lover-effect 2s ease both;
+  }
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes navi-art-lover-effect {
+    0% {
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    100% {
+      left: 12.5%;
+      top: 40%;
+    }
+  }
+  /* Standard syntax */
+  @keyframes navi-art-lover-effect {
+    0% {
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    100% {
+      left: 12.5%;
+      top: 40%;
+    }
+  }
+  .navi-kittyMother {
+    z-index: 5;
+    position: absolute;
+    -webkit-animation-name: navi-kittyMother-effect;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s;
+    /* Safari 4.0 - 8.0 */
+    animation: navi-kittyMother-effect 2s both;
+  }
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes navi-kittyMother-effect {
+    0% {
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    100% {
+      right: 12.5%;
+      top: 40%;
+    }
+  }
+  /* Standard syntax */
+  @keyframes navi-kittyMother-effect {
+    0% {
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    100% {
+      right: 12.5%;
+      top: 40%;
+    }
+  }
+  .hi-logo {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 150px;
+  }
+
+  #hi-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #hi-logo path {
+    stroke-width: 2px;
+    stroke: white;
+  }
+
+  #hi-logo path:nth-child(1) {
+    stroke-dasharray: 684;
+    stroke-dashoffset: 684;
+    animation: hi-logo-animation 2.5s ease forwards, hi-logo-fill 2s ease both 4.5s;
+  }
+
+  #hi-logo path:nth-child(2) {
+    stroke-dasharray: 158.5;
+    stroke-dashoffset: 158.5;
+    animation: hi-logo-animation 0.8s ease forwards 1s, hi-logo-fill 2s ease both 4.5s;
+  }
+
+  #hi-logo path:nth-child(3) {
+    stroke-dasharray: 45.1;
+    stroke-dashoffset: 45.1;
+    animation: hi-logo-animation 0.4s ease forwards 1.8s, hi-logo-fill 2s ease both 4.8s;
+  }
+
+  #hi-logo path:nth-child(4) {
+    stroke-dasharray: 425.9;
+    stroke-dashoffset: 425.9;
+    animation: hi-logo-animation 1.5s ease forwards 2.2s, hi-logo-fill 2s ease both 5s;
+  }
+
+  #hi-logo path:nth-child(5) {
+    stroke-dasharray: 265.6;
+    stroke-dashoffset: 265.6;
+    animation: hi-logo-animation 1.6s ease forwards 2.6s, hi-logo-fill 2s ease both 5.3s;
+  }
+
+  #hi-logo path:nth-child(6) {
+    stroke-dasharray: 354.5;
+    stroke-dashoffset: 354.5;
+    animation: hi-logo-animation 2.2s ease forwards 3s, hi-logo-fill 3s ease both 5.6s;
+  }
+
+  #hi-logo path:nth-child(7) {
+    stroke-dasharray: 391.8;
+    stroke-dashoffset: 391.8;
+    animation: hi-logo-animation 1.5s ease forwards 4s, hi-logo-fill 2s ease both 6.2s;
+  }
+
+  #hi-logo path:nth-child(8) {
+    stroke-dasharray: 235.6;
+    stroke-dashoffset: 235.6;
+    animation: hi-logo-animation 2s ease forwards 4.5s, hi-logo-fill 2s ease both 6.5s;
+  }
+
+  @keyframes hi-logo-animation {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes hi-logo-fill {
+    0% {
+      fill: transparent;
+    }
+    100% {
+      fill: #FFFFFF;
+    }
+  }
+  #iframe_container {
+    padding: 0px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+  }
+
+  .iframe-display-body {
+    position: absolute;
+    top: 230px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  .page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
+  }
+
+  .experience-section {
+    background-color: #FFFFFF;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 360px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .experience-text-container-left {
+    height: 280px;
+    width: 95%;
+    float: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+  }
+
+  .experience-text-container-right {
+    height: 280px;
+    width: 95%;
+    float: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+  }
+
+  .experience-text-main {
+    height: 240px;
+    width: 98%;
+    padding-bottom: 15px;
+  }
+
+  .experience-text-title-content {
+    float: left;
+    color: #63B6F8;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .experience-text-title-subcontent {
+    clear: left;
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .experience-text-position {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .experience-period {
+    font-size: 16px;
+    color: #2ECC71;
+    font-weight: normal;
+  }
+
+  .experience-text-intro {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  .experience-pic-container-left {
+    display: none;
+  }
+
+  .experience-pic-container-right {
+    display: none;
+  }
+
+  .experience-pic {
+    display: none;
+  }
+
+  .experience-pic-small-logo {
+    float: right;
+  }
+
+  .easyrent-logo-pic {
+    height: 35px;
+    width: 35px;
+    position: relative;
+    background-image: url("../images/experiences/easyrent-logo.png");
+    background-size: 100% 100%;
+  }
+
+  .tca-logo-pic {
+    height: 35px;
+    width: 35px;
+    position: relative;
+    background-image: url("../images/experiences/tca-logo.png");
+    background-size: 100% 100%;
+  }
+
+  .mode-logo-pic {
+    background-image: url("../images/experiences/mode-logo.png");
+    background-size: 100% 100%;
+  }
+
+  .fenwick-logo-pic {
+    background-image: url("../images/experiences/fenwick-logo.png");
+    background-size: 100% 100%;
+  }
+
+  .caltech-experience-logo-pic {
+    background-image: url("../images/experiences/caltech-experience-logo.png");
+    background-size: 100% 100%;
+  }
+
+  .stanford-experience-logo-pic {
+    background-image: url("../images/experiences/stanford-experience-logo.png");
+    background-size: 100% 100%;
+  }
+
+  .ucsd-experience-logo-pic {
+    background-image: url("../images/experiences/ucsd-experience-logo.png");
+    background-size: 100% 100%;
+  }
+
+  .bupt-experience-logo-pic {
+    background-image: url("../images/experiences/bupt-experience-logo.png");
+    background-size: 100% 100%;
+  }
+
+  .page-intro-container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 35px;
+  }
+
+  .writer-section {
+    margin-top: 25px;
+    height: 240px;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #david-baltimore.writer-section {
+    animation: writer-section-effect 2s;
+  }
+
+  #robert-grubbs.writer-section {
+    animation: writer-section-effect 2s backwards 0.5s;
+  }
+
+  #rudolph-marcus.writer-section {
+    animation: writer-section-effect 2s backwards 1s;
+  }
+
+  #stanford-cgcp.writer-section {
+    nimation: writer-section-effect 2s backwards 1.5s;
+  }
+
+  @keyframes writer-section-effect {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+  .writer-pic-container {
+    position: relative;
+    float: left;
+    width: 25%;
+    padding-left: 4%;
+    padding-top: 4%;
+  }
+
+  .writer-pic {
+    width: 95%;
+    height: auto;
+    max-height: 180px;
+    max-width: 200px;
+    border-radius: 20%;
+  }
+
+  .nobel-prize-baltimore-pic {
+    background-image: url("../images/writer/with-david-baltimore.png");
+    background-size: 100% 100%;
+    border-radius: 20%;
+    padding: 15px;
+  }
+
+  .nobel-prize-grubbs-pic {
+    background-image: url("../images/writer/with-robert-grubbs.png");
+    background-size: 100% 100%;
+    border-radius: 20%;
+    padding: 15px;
+  }
+
+  .nobel-prize-marcus-pic {
+    background-image: url("../images/writer/with-rudolph-marcus.png");
+    background-size: 100% 100%;
+    border-radius: 20%;
+    padding: 15px;
+  }
+
+  .stanford-cgcp-pic {
+    background-image: url("../images/writer/stanford-cgcp-with-mei.jpg");
+    background-size: 100% 100%;
+    border-radius: 20%;
+    padding: 15px;
+  }
+
+  .writer-text-container {
+    height: 240px;
+    width: 70%;
+    float: right;
+    padding-right: 4%;
+    padding-top: 2%;
+  }
+
+  .writer-text-main {
+    height: 75%;
+    width: 100%;
+    padding-bottom: 15px;
+  }
+
+  .writer-text-title-container {
+    height: 30px;
+  }
+
+  .writer-text-title-content {
+    color: #63B6F8;
+    font-size: 22px;
+    float: left;
+  }
+
+  .writer-text-title-logo {
+    float: right;
+  }
+
+  .writer-text-title-logo-caltech {
+    position: relative;
+    height: 34px;
+    width: 34px;
+    background-image: url("../images/writer/caltech-logo.png");
+    background-size: 100% 100%;
+  }
+
+  .writer-text-title-logo-stanford {
+    position: relative;
+    height: 34px;
+    width: 34px;
+    background-image: url("../images/writer/stanford-logo.png");
+    background-size: 100% 100%;
+  }
+
+  .writer-text-intro {
+    padding-top: 10px;
+    font-size: 15.5px;
+    line-height: 20px;
+  }
+
+  .read-full-article-container {
+    height: 50px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+  }
+
+  .read-full-article-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #63B6F8;
+    border-radius: 100px;
+    font-size: 18px;
+    color: #FFFFFF;
+  }
+
+  .read-full-article-button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  .read-full-article-text {
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+  }
+
+  .kittyMother-page {
+    width: 100%;
+    height: 100vh;
+    background-color: #F2F4F4;
+  }
+
+  .page-title {
+    text-align: center;
+    font-size: 26px;
+    color: #63B6F8;
+    padding-bottom: 10px;
+  }
+
+  .page-intro {
+    line-height: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
+  }
+
+  .page-intro-highlight {
+    font-weight: bold;
+    color: #2ECC71;
+  }
+
+  #pitton:hover {
+    color: #63B6F8;
+  }
+
+  #dublin:hover {
+    color: #63B6F8;
+  }
+
+  .kitty-section-large {
+    display: block;
+    margin: auto;
+    width: 40%;
+  }
+
+  .kitty-pic-large {
+    width: 50%;
+    height: auto;
+    display: inline-block;
+    float: left;
+    margin: 0;
+    max-height: 500px;
+    max-width: 500px;
+    animation: fade-in-effect 4s ease both 0.3s;
+  }
+
+  .kitty-section-regular {
+    display: block;
+  }
+
+  @keyframes fade-in-effect {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+  .kitty-pic {
+    filter: grayscale(70%);
+  }
+
+  .kitty-pic-regular {
+    margin: 0;
+    float: left;
+    display: inline-block;
+    width: 16.6%;
+    height: auto;
+    max-width: 400px;
+    max-height: 400px;
+  }
+
+  .kitty-pic-regular:hover {
+    filter: grayscale(0);
+    cursor: pointer;
+  }
+
+  .kitty-pic-regular-1 {
+    clear: left;
+    animation: fade-in-effect 4s ease both 0.5s;
+  }
+
+  .kitty-pic-regular-2 {
+    animation: fade-in-effect 4s ease both 0.8s;
+  }
+
+  .kitty-pic-regular-3 {
+    animation: fade-in-effect 4s ease both 1.1s;
+  }
+
+  .kitty-pic-regular-4 {
+    animation: fade-in-effect 4s ease both 1.4s;
+  }
+
+  .kitty-pic-regular-5 {
+    animation: fade-in-effect 4s ease both 1.7s;
+  }
+
+  .kitty-pic-regular-6 {
+    animation: fade-in-effect 4s ease both 2s;
+  }
+
+  .kitty-pic-regular-7 {
+    animation: fade-in-effect 4s ease both 2s;
+  }
+
+  .kitty-pic-regular-8 {
+    animation: fade-in-effect 4s ease both 1.7s;
+  }
+
+  .kitty-pic-regular-9 {
+    animation: fade-in-effect 4s ease both 1.4s;
+  }
+
+  .kitty-pic-regular-10 {
+    animation: fade-in-effect 4s ease both 1.1s;
+  }
+
+  .kitty-pic-regular-11 {
+    animation: fade-in-effect 4s ease both 0.8s;
+  }
+
+  .kitty-pic-regular-12 {
+    animation: fade-in-effect 4s ease both 0.5s;
+  }
+
+  /* below - new effect for kitty pictures*/
+  *, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .demo {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(60deg, #5B5893, #2c2a49);
+  }
+  .demo__gallery {
+    width: 620px;
+    height: 620px;
+    padding: 2px;
+    flex-shrink: 0;
+    background: #eee;
+    perspective: 700px;
+    border-radius: 10px;
+  }
+  .demo__placeholder {
+    width: 150px;
+    height: 150px;
+    margin: 2px;
+    float: left;
+    background-color: lightslategrey;
+    border-radius: 10px;
+  }
+  .demo__part {
+    position: relative;
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin: 2px;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    transition: all 0.3s ease-in-out;
+  }
+  .demo__part:hover .demo__part-front {
+    box-shadow: 0 0 12px black;
+    transform: scale(0.96);
+  }
+  .demo__part:hover .demo__part-front:after {
+    opacity: 0;
+  }
+  .demo__part-front, .demo__part-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .demo__part-front {
+    background-color: lightslategrey;
+    background-size: cover;
+    background-position: center;
+    transform: rotateX(0deg);
+    transition: all 0.2s ease;
+  }
+  .demo__part-front:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    content: "";
+    opacity: 0.5;
+    transition: all 0.2s ease;
+  }
+  .demo__part-back {
+    transform: rotateY(180deg) rotateX(0deg);
+  }
+  .demo__part-back-inner {
+    width: 612px;
+    height: 612px;
+    background-image: url(http://kirillkiyutin.com/img/nyc/nyc1.jpg);
+    background-size: cover;
+    background-position: center;
+    backface-visibility: hidden;
+  }
+  .demo__help {
+    margin-bottom: 7px;
+    font-size: 30px;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    color: white;
+  }
+  .demo__help a {
+    color: white;
+  }
+  .demo__help a:hover {
+    color: #E39999;
+  }
+
+  .demo__part-1-1 .demo__part-back-inner {
+    transform: translate(0px, 0px);
+  }
+
+  .demo__part-1-2 .demo__part-back-inner {
+    transform: translate(-154px, 0px);
+  }
+
+  .demo__part-1-3 .demo__part-back-inner {
+    transform: translate(-308px, 0px);
+  }
+
+  .demo__part-1-4 .demo__part-back-inner {
+    transform: translate(-462px, 0px);
+  }
+
+  .demo__part-2-1 .demo__part-back-inner {
+    transform: translate(0px, -154px);
+  }
+
+  .demo__part-2-2 .demo__part-back-inner {
+    transform: translate(-154px, -154px);
+  }
+
+  .demo__part-2-3 .demo__part-back-inner {
+    transform: translate(-308px, -154px);
+  }
+
+  .demo__part-2-4 .demo__part-back-inner {
+    transform: translate(-462px, -154px);
+  }
+
+  .demo__part-3-1 .demo__part-back-inner {
+    transform: translate(0px, -308px);
+  }
+
+  .demo__part-3-2 .demo__part-back-inner {
+    transform: translate(-154px, -308px);
+  }
+
+  .demo__part-3-3 .demo__part-back-inner {
+    transform: translate(-308px, -308px);
+  }
+
+  .demo__part-3-4 .demo__part-back-inner {
+    transform: translate(-462px, -308px);
+  }
+
+  .demo__part-4-1 .demo__part-back-inner {
+    transform: translate(0px, -462px);
+  }
+
+  .demo__part-4-2 .demo__part-back-inner {
+    transform: translate(-154px, -462px);
+  }
+
+  .demo__part-4-3 .demo__part-back-inner {
+    transform: translate(-308px, -462px);
+  }
+
+  .demo__part-4-4 .demo__part-back-inner {
+    transform: translate(-462px, -462px);
+  }
+
+  .show-front {
+    transform: none;
+  }
+
+  /* above - new effect for kitty pictures*/
+  .art-section {
+    background-color: #FFFFFF;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    height: auto;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .paintings-container {
+    width: 70%;
+    height: auto;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .paintings-pic {
+    width: 100%;
+    border-radius: 10%;
+  }
+
+  .imageSlides {
+    display: none;
+    /*ensure one pic at one time*/
+  }
+
+  /* Fading Animation */
+  .paintings-fade {
+    -webkit-animation-name: paintings-fade-effect;
+    -webkit-animation-duration: 2s;
+    animation: paintings-fade-effect 2s ease;
+  }
+
+  @-webkit-keyframes paintings-fade-effect {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes paintings-fade-effect {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .painting-internal-frame {
+    border: solid 15px;
+    border-bottom-color: #ffe;
+    border-left-color: #eed;
+    border-right-color: #eed;
+    border-top-color: #ccb;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .painting-external-frame {
+    background-color: #ddc;
+    border: solid 5vmin #eee;
+    border-bottom-color: #fff;
+    border-left-color: #eee;
+    border-radius: 2px;
+    border-right-color: #eee;
+    border-top-color: #ddd;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset, 0 5px 10px 5px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 10vh 10vw;
+    padding: 8vmin;
+    position: relative;
+    text-align: center;
+  }
+  .painting-external-frame:before {
+    border-radius: 2px;
+    bottom: -2vmin;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25) inset;
+    content: "";
+    left: -2vmin;
+    position: absolute;
+    right: -2vmin;
+    top: -2vmin;
+  }
+  .painting-external-frame:after {
+    border-radius: 2px;
+    bottom: -2.5vmin;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+    content: "";
+    left: -2.5vmin;
+    position: absolute;
+    right: -2.5vmin;
+    top: -2.5vmin;
+  }
+
+  .previous, .next {
+    z-index: 5;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 6px;
+    margin-top: -6px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 2px 2px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 2px 0 0 2px;
+  }
+
+  .previous:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .image-select-dot {
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .select-dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #BBBBBB;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .select-dot:hover {
+    background-color: #4C4C4C;
+  }
+
+  .music-box {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 160px;
+  }
+}
+
+/*# sourceMappingURL=style-smallWq-screen.css.map */
