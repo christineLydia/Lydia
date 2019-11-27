@@ -1,4 +1,4 @@
-@media (max-width: 751px) {
+@media (max-width: 750px) {
   .main-profile-pic-block {
     position: fixed;
     top: 0;
@@ -23,8 +23,40 @@
     z-index: 10;
   }
 
+  .link-highlight {
+    font-weight: bold;
+    color: #2ECC71;
+    text-decoration: none;
+  }
+
+  .link-highlight:hover {
+    cursor: pointer;
+    color: #63B6F8;
+    text-decoration: none;
+  }
+
+  .title-highlight {
+    font-weight: bold;
+    color: #63B6F8;
+    text-decoration: none;
+  }
+
+  .title-highlight:hover {
+    cursor: pointer;
+    color: #2ECC71;
+    text-decoration: none;
+  }
+
   .navi-item {
-    font-size: 22px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 24px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
+  }
+
+  .navi-item:hover {
+    cursor: pointer;
+    color: #8EF863;
   }
 
   .navi-experience {
@@ -267,6 +299,10 @@
     font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
   }
 
+  .experience-page {
+    background-color: #F2F4F4;
+  }
+
   .experience-section {
     background-color: #FFFFFF;
     margin-top: 15px;
@@ -365,31 +401,57 @@
   }
 
   .mode-logo-pic {
+    height: 35px;
+    width: 35px;
+    position: relative;
     background-image: url("../images/experiences/mode-logo.png");
     background-size: 100% 100%;
   }
 
   .fenwick-logo-pic {
+    height: 35px;
+    width: 35px;
+    position: relative;
     background-image: url("../images/experiences/fenwick-logo.png");
     background-size: 100% 100%;
   }
 
   .caltech-experience-logo-pic {
+    height: 35px;
+    width: 35px;
+    position: relative;
     background-image: url("../images/experiences/caltech-experience-logo.png");
     background-size: 100% 100%;
   }
 
+  .china-campus-logo-pic {
+    height: 35px;
+    width: 35px;
+    position: relative;
+    background-image: url("../images/experiences/china-campus-logo.png");
+    background-size: 100% 100%;
+  }
+
   .stanford-experience-logo-pic {
+    height: 35px;
+    width: 35px;
+    position: relative;
     background-image: url("../images/experiences/stanford-experience-logo.png");
     background-size: 100% 100%;
   }
 
   .ucsd-experience-logo-pic {
+    height: 35px;
+    width: 35px;
+    position: relative;
     background-image: url("../images/experiences/ucsd-experience-logo.png");
     background-size: 100% 100%;
   }
 
   .bupt-experience-logo-pic {
+    height: 35px;
+    width: 35px;
+    position: relative;
     background-image: url("../images/experiences/bupt-experience-logo.png");
     background-size: 100% 100%;
   }
@@ -404,7 +466,6 @@
 
   .writer-section {
     margin-top: 5%;
-    height: 420px;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -483,6 +544,8 @@
     height: 240px;
     width: 80%;
     padding-top: 2%;
+    padding-left: 0;
+    padding-right: 0;
     margin-left: auto;
     margin-right: auto;
   }
@@ -530,7 +593,6 @@
   }
 
   .read-full-article-container {
-    height: 20%;
     width: 100%;
     position: relative;
     bottom: 0;

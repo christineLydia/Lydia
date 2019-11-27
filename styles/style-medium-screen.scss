@@ -31,8 +31,41 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
         z-index: 10;
     }
 
+    .link-highlight {
+        font-weight: bold;
+        color: $pw-green;
+        // color: #568FFF;
+        text-decoration: none;
+    }
+
+    .link-highlight:hover {
+        cursor: pointer;
+        color: $pw-blue;
+        text-decoration: none;
+    }
+
+    .title-highlight {
+        font-weight: bold;
+        color: $pw-blue;
+        text-decoration: none;
+    }
+
+    .title-highlight:hover {
+        cursor: pointer;
+        color: $pw-green;
+        text-decoration: none;
+    }
+
     .navi-item {
+        color: #FFFFFF;
+        text-align: center;
         font-size: 22px;
+        font-family: $pw-font-main;
+    }
+
+    .navi-item:hover {
+        cursor: pointer;
+        color: $pw-green-1;
     }
 
     .navi-experience {
@@ -277,6 +310,13 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
         font-family: $pw-font-main;
     }
 
+    .experience-page {
+        background-color: #F2F4F4;
+        //width: 100%;
+        //height: 100vh;
+    }
+
+
     .experience-section {
         background-color: #FFFFFF;
         margin-top: 15px;
@@ -358,7 +398,7 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
         padding-top: 6%;
     }
 
-    .experience-pic-small-log {
+    .experience-pic-small-logo {
         display: none;
     }
 

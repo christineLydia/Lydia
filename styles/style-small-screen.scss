@@ -6,7 +6,7 @@ $pw-green-1: #8EF863;
 
 $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
 
-@media (max-width: 751px) {
+@media (max-width: 750px) {
     .main-profile-pic-block {
         position: fixed;
         top: 0;
@@ -31,8 +31,41 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
         z-index: 10;
     }
 
-    .navi-item {
-        font-size: 22px;
+    .link-highlight {
+        font-weight: bold;
+        color: $pw-green;
+        // color: #568FFF;
+        text-decoration: none;
+    }
+
+    .link-highlight:hover {
+        cursor: pointer;
+        color: $pw-blue;
+        text-decoration: none;
+    }
+
+    .title-highlight {
+        font-weight: bold;
+        color: $pw-blue;
+        text-decoration: none;
+    }
+
+    .title-highlight:hover {
+        cursor: pointer;
+        color: $pw-green;
+        text-decoration: none;
+    }
+
+     .navi-item {
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 24px;
+        font-family: $pw-font-main;
+    }
+
+    .navi-item:hover {
+        cursor: pointer;
+        color: $pw-green-1;
     }
 
     .navi-experience {
@@ -277,6 +310,12 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
         font-family: $pw-font-main;
     }
 
+    .experience-page {
+        background-color: #F2F4F4;
+        //width: 100%;
+        //height: 100vh;
+    }
+
     .experience-section {
         background-color: #FFFFFF;
         margin-top: 15px;
@@ -379,31 +418,57 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
     }
 
     .mode-logo-pic {
+        height: 35px;
+        width: 35px;
+        position: relative;
         background-image: url("../images/experiences/mode-logo.png");
         background-size: 100% 100%;
     }
 
     .fenwick-logo-pic {
+        height: 35px;
+        width: 35px;
+        position: relative;
         background-image: url("../images/experiences/fenwick-logo.png");
         background-size: 100% 100%;
     }
 
     .caltech-experience-logo-pic {
+        height: 35px;
+        width: 35px;
+        position: relative;        
         background-image: url("../images/experiences/caltech-experience-logo.png");
         background-size: 100% 100%;
     }
 
+    .china-campus-logo-pic {
+        height: 35px;
+        width: 35px;
+        position: relative;
+        background-image: url("../images/experiences/china-campus-logo.png");
+        background-size: 100% 100%;
+    }
+
     .stanford-experience-logo-pic {
+        height: 35px;
+        width: 35px;
+        position: relative;
         background-image: url("../images/experiences/stanford-experience-logo.png");
         background-size: 100% 100%;
     }
 
     .ucsd-experience-logo-pic {
+        height: 35px;
+        width: 35px;
+        position: relative;
         background-image: url("../images/experiences/ucsd-experience-logo.png");
         background-size: 100% 100%;
     }
 
     .bupt-experience-logo-pic {
+        height: 35px;
+        width: 35px;
+        position: relative;
         background-image: url("../images/experiences/bupt-experience-logo.png");
         background-size: 100% 100%;
     }

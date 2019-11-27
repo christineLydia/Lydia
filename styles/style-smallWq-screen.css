@@ -1,4 +1,4 @@
-@media (max-width: 751px) {
+@media (max-width: 750px) {
   .main-profile-pic-block {
     position: fixed;
     top: 0;
@@ -23,8 +23,40 @@
     z-index: 10;
   }
 
+  .link-highlight {
+    font-weight: bold;
+    color: #2ECC71;
+    text-decoration: none;
+  }
+
+  .link-highlight:hover {
+    cursor: pointer;
+    color: #63B6F8;
+    text-decoration: none;
+  }
+
+  .title-highlight {
+    font-weight: bold;
+    color: #63B6F8;
+    text-decoration: none;
+  }
+
+  .title-highlight:hover {
+    cursor: pointer;
+    color: #2ECC71;
+    text-decoration: none;
+  }
+
   .navi-item {
-    font-size: 22px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 24px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
+  }
+
+  .navi-item:hover {
+    cursor: pointer;
+    color: #8EF863;
   }
 
   .navi-experience {
@@ -267,69 +299,73 @@
     font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
   }
 
+  .experience-page {
+    background-color: #F2F4F4;
+  }
+
   .experience-section {
     background-color: #FFFFFF;
     margin-top: 15px;
     margin-bottom: 15px;
-    height: 360px;
+    height: 340px;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
 
   .experience-text-container-left {
-    height: 280px;
+    height: 320px;
     width: 95%;
     float: left;
-    padding-left: 5%;
+    padding-left: 8%;
     padding-right: 5%;
-    padding-top: 2%;
+    padding-top: 4%;
   }
 
   .experience-text-container-right {
-    height: 280px;
+    height: 300px;
     width: 95%;
     float: left;
-    padding-left: 5%;
+    padding-left: 8%;
     padding-right: 5%;
-    padding-top: 2%;
+    padding-top: 4%;
   }
 
   .experience-text-main {
-    height: 240px;
-    width: 98%;
-    padding-bottom: 15px;
+    height: 260px;
+    width: 100%;
+    padding-bottom: 3%;
   }
 
   .experience-text-title-content {
     float: left;
     color: #63B6F8;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
   }
 
   .experience-text-title-subcontent {
     clear: left;
-    font-size: 16px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    font-size: 14px;
+    padding-bottom: 2%;
   }
 
   .experience-text-position {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
   }
 
   .experience-period {
-    font-size: 16px;
+    font-size: 14px;
     color: #2ECC71;
     font-weight: normal;
   }
 
   .experience-text-intro {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 16px;
+    margin-left: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: 14px;
   }
 
   .experience-pic-container-left {
@@ -365,31 +401,57 @@
   }
 
   .mode-logo-pic {
+    height: 35px;
+    width: 35px;
+    position: relative;
     background-image: url("../images/experiences/mode-logo.png");
     background-size: 100% 100%;
   }
 
   .fenwick-logo-pic {
+    height: 35px;
+    width: 35px;
+    position: relative;
     background-image: url("../images/experiences/fenwick-logo.png");
     background-size: 100% 100%;
   }
 
   .caltech-experience-logo-pic {
+    height: 35px;
+    width: 35px;
+    position: relative;
     background-image: url("../images/experiences/caltech-experience-logo.png");
     background-size: 100% 100%;
   }
 
+  .china-campus-logo-pic {
+    height: 35px;
+    width: 35px;
+    position: relative;
+    background-image: url("../images/experiences/china-campus-logo.png");
+    background-size: 100% 100%;
+  }
+
   .stanford-experience-logo-pic {
+    height: 35px;
+    width: 35px;
+    position: relative;
     background-image: url("../images/experiences/stanford-experience-logo.png");
     background-size: 100% 100%;
   }
 
   .ucsd-experience-logo-pic {
+    height: 35px;
+    width: 35px;
+    position: relative;
     background-image: url("../images/experiences/ucsd-experience-logo.png");
     background-size: 100% 100%;
   }
 
   .bupt-experience-logo-pic {
+    height: 35px;
+    width: 35px;
+    position: relative;
     background-image: url("../images/experiences/bupt-experience-logo.png");
     background-size: 100% 100%;
   }
@@ -403,9 +465,8 @@
   }
 
   .writer-section {
-    margin-top: 25px;
-    height: 240px;
-    width: 65%;
+    margin-top: 5%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -435,15 +496,15 @@
     }
   }
   .writer-pic-container {
+    float: none;
     position: relative;
-    float: left;
-    width: 25%;
-    padding-left: 4%;
-    padding-top: 4%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .writer-pic {
-    width: 95%;
+    width: 100%;
     height: auto;
     max-height: 180px;
     max-width: 200px;
@@ -479,26 +540,28 @@
   }
 
   .writer-text-container {
+    float: none;
     height: 240px;
-    width: 70%;
-    float: right;
-    padding-right: 4%;
+    width: 80%;
     padding-top: 2%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .writer-text-main {
     height: 75%;
     width: 100%;
-    padding-bottom: 15px;
   }
 
   .writer-text-title-container {
-    height: 30px;
+    height: 28x;
   }
 
   .writer-text-title-content {
     color: #63B6F8;
-    font-size: 22px;
+    font-size: 18px;
     float: left;
   }
 
@@ -508,28 +571,28 @@
 
   .writer-text-title-logo-caltech {
     position: relative;
-    height: 34px;
-    width: 34px;
+    height: 32px;
+    width: 32px;
     background-image: url("../images/writer/caltech-logo.png");
     background-size: 100% 100%;
   }
 
   .writer-text-title-logo-stanford {
     position: relative;
-    height: 34px;
-    width: 34px;
+    height: 32px;
+    width: 32px;
     background-image: url("../images/writer/stanford-logo.png");
     background-size: 100% 100%;
   }
 
   .writer-text-intro {
+    clear: left;
     padding-top: 10px;
-    font-size: 15.5px;
+    font-size: 15px;
     line-height: 20px;
   }
 
   .read-full-article-container {
-    height: 50px;
     width: 100%;
     position: relative;
     bottom: 0;
@@ -543,7 +606,7 @@
     padding: 10px 20px;
     background-color: #63B6F8;
     border-radius: 100px;
-    font-size: 18px;
+    font-size: 16px;
     color: #FFFFFF;
   }
 
@@ -553,7 +616,7 @@
   }
 
   .read-full-article-text {
-    font-size: 18px;
+    font-size: 16px;
     color: #FFFFFF;
     text-align: center;
   }
@@ -566,7 +629,7 @@
 
   .page-title {
     text-align: center;
-    font-size: 26px;
+    font-size: 23px;
     color: #63B6F8;
     padding-bottom: 10px;
   }
@@ -1014,4 +1077,4 @@
   }
 }
 
-/*# sourceMappingURL=style-smallWq-screen.css.map */
+/*# sourceMappingURL=style-smallwq-screen.css.map */

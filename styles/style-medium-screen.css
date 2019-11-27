@@ -23,8 +23,40 @@
     z-index: 10;
   }
 
+  .link-highlight {
+    font-weight: bold;
+    color: #2ECC71;
+    text-decoration: none;
+  }
+
+  .link-highlight:hover {
+    cursor: pointer;
+    color: #63B6F8;
+    text-decoration: none;
+  }
+
+  .title-highlight {
+    font-weight: bold;
+    color: #63B6F8;
+    text-decoration: none;
+  }
+
+  .title-highlight:hover {
+    cursor: pointer;
+    color: #2ECC71;
+    text-decoration: none;
+  }
+
   .navi-item {
+    color: #FFFFFF;
+    text-align: center;
     font-size: 22px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
+  }
+
+  .navi-item:hover {
+    cursor: pointer;
+    color: #8EF863;
   }
 
   .navi-experience {
@@ -267,6 +299,10 @@
     font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
   }
 
+  .experience-page {
+    background-color: #F2F4F4;
+  }
+
   .experience-section {
     background-color: #FFFFFF;
     margin-top: 15px;
@@ -344,7 +380,7 @@
     padding-top: 6%;
   }
 
-  .experience-pic-small-log {
+  .experience-pic-small-logo {
     display: none;
   }
 
