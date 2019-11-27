@@ -1,5 +1,34 @@
 /*need to wait until elements are loaded and added to DOM*/
-document.addEventListener('DOMContentLoaded', (event) => {
+    $(".icon").hover(function() {
+        $(this).css("cursor", "pointer");
+    });
+
+    /*
+    $(".icon").click(function() {
+        var navi = document.getElementById("navi-bar");
+        if (navi.className === "navi-bar") {
+            console.log("only navi-bar");
+            navi.className += " display-menu";
+        } else {
+            console.log("with display-menu");
+            navi.className = "navi-bar";
+        }
+        
+        // $(this).css("transform", "translateY(12px) rotate(135deg)");
+
+    });*/
+
+    function menuToggle() {
+        console.log("in function");
+        var navi = document.getElementById("navi-bar");
+        if (navi.className === "navi-bar") {
+            console.log("only navi-bar");
+            navi.className += " display-menu";
+        } else {
+            console.log("with display-menu");
+            navi.className = "navi-bar";
+        }
+    }
    
     const logo = document.querySelectorAll("#hi-logo path");
 
@@ -38,7 +67,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         window.location = $(this).find("a").attr("href");
         return false;
     });
-});
 
 var imageSlideIndex = 1;
 

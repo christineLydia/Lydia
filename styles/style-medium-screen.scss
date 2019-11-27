@@ -7,6 +7,10 @@ $pw-green-1: #8EF863;
 $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
 
 @media (min-width: 751px) and (max-width: 1000px) {
+    #navi-icon {
+        display: none;
+    }
+
     .main-profile-pic-block {
         position: fixed;
         top: 0;
