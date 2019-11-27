@@ -55,7 +55,7 @@ $(document).ready(function() {
 
     $image.css("background-image", $(this).css("background-image"));
     if (help) {
-      $help.html("Click any of the tiles to get back");
+      $help.html("Click any of the kitty pictures to flip back");
       help = false;
     }
 

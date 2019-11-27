@@ -1,8 +1,11 @@
+$pw-white: #FFFFFF;
 $pw-blue: #63B6F8;
 $pw-blue-1: #5DADE2;
 $pw-green-0: #27AE60;
 $pw-green: #2ECC71;
-$pw-green-1: #8EF863;
+$pw-green-1: #8EF863; //lighter of pw-green
+$pw-green-2: #29B765; //darker of pw-green
+$pw-green-3: #24A35A; // even darker
 
 $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
 
@@ -752,18 +755,18 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
         animation: fade-in-effect 4s ease both 0.5s;
     }
 
-    /* below - new effect for kitty pictures*/
-    $partSize: 150px;
+    /* below - kitty-pic-block-2 for kitty pictures*/
+    $partSize: 160px;
     $margins: 2px;
-    $rows: 4; //change this also in js
-    $cols: 4; //change this also in js
+    $rows: 4; // change also in js file
+    $cols: 4; // change also in js file
     // TODO, need to adjust perspective for responsive design
     // perspective: calc( 720px + ( 100vw - 320px ) * 7 );
     $perspective: 700px;
     $transTime: 0.3s;
     $border-radius: 10px;
     $shadow-size: 12px;
-    $demo-bg: linear-gradient(60deg, #5B5893, darken(#6A66A6, 30%));
+    $demo-bg: linear-gradient($pw-green, $pw-green-3);
     $gallery-bg: #eee;
 
     *, *:before, *:after {
@@ -772,16 +775,25 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
       padding: 0;
     }
 
+    .kitty-section {
+        width: 100%;
+        background-image: $demo-bg;
+    }
+
     .demo {
       display: flex;
       width: 100vw;
-      height: 100vh;
       align-items: center;
       justify-content: center;
       flex-direction: column;
       
-      background: $demo-bg;
+      // background: $demo-bg;
       
+    .gallery-container {
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+    
       &__gallery {
         width: $cols * $partSize + 2 * $cols * $margins + 2 * $margins;
         height: $rows * $partSize + 2 * $rows * $margins + 2 * $margins;
@@ -880,14 +892,14 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
       }
       
       &__help {
-        margin-bottom: 7px;
-        font-size: 30px;
-        font-family: "Yanone Kaffeesatz", sans-serif;
+        padding-top: 3%;
+        font-size: 24px;
+        font-family: $pw-font-main;
         
-        color: white;
+        color: $pw-white;
         
         & a {
-          color: white;
+          color: $pw-white;
           
           &:hover {
             color: #E39999;

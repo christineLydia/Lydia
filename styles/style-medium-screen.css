@@ -741,8 +741,8 @@
     background: linear-gradient(60deg, #5B5893, #2c2a49);
   }
   .demo__gallery {
-    width: 620px;
-    height: 620px;
+    width: 580px;
+    height: 580px;
     padding: 2px;
     flex-shrink: 0;
     background: #eee;
@@ -750,8 +750,8 @@
     border-radius: 10px;
   }
   .demo__placeholder {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     margin: 2px;
     float: left;
     background-color: lightslategrey;
@@ -760,8 +760,8 @@
   .demo__part {
     position: relative;
     float: left;
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     margin: 2px;
     transform: rotateY(180deg);
     transform-style: preserve-3d;
@@ -807,8 +807,8 @@
     transform: rotateY(180deg) rotateX(0deg);
   }
   .demo__part-back-inner {
-    width: 612px;
-    height: 612px;
+    width: 572px;
+    height: 572px;
     background-image: url(http://kirillkiyutin.com/img/nyc/nyc1.jpg);
     background-size: cover;
     background-position: center;
@@ -832,63 +832,63 @@
   }
 
   .demo__part-1-2 .demo__part-back-inner {
-    transform: translate(-154px, 0px);
+    transform: translate(-144px, 0px);
   }
 
   .demo__part-1-3 .demo__part-back-inner {
-    transform: translate(-308px, 0px);
+    transform: translate(-288px, 0px);
   }
 
   .demo__part-1-4 .demo__part-back-inner {
-    transform: translate(-462px, 0px);
+    transform: translate(-432px, 0px);
   }
 
   .demo__part-2-1 .demo__part-back-inner {
-    transform: translate(0px, -154px);
+    transform: translate(0px, -144px);
   }
 
   .demo__part-2-2 .demo__part-back-inner {
-    transform: translate(-154px, -154px);
+    transform: translate(-144px, -144px);
   }
 
   .demo__part-2-3 .demo__part-back-inner {
-    transform: translate(-308px, -154px);
+    transform: translate(-288px, -144px);
   }
 
   .demo__part-2-4 .demo__part-back-inner {
-    transform: translate(-462px, -154px);
+    transform: translate(-432px, -144px);
   }
 
   .demo__part-3-1 .demo__part-back-inner {
-    transform: translate(0px, -308px);
+    transform: translate(0px, -288px);
   }
 
   .demo__part-3-2 .demo__part-back-inner {
-    transform: translate(-154px, -308px);
+    transform: translate(-144px, -288px);
   }
 
   .demo__part-3-3 .demo__part-back-inner {
-    transform: translate(-308px, -308px);
+    transform: translate(-288px, -288px);
   }
 
   .demo__part-3-4 .demo__part-back-inner {
-    transform: translate(-462px, -308px);
+    transform: translate(-432px, -288px);
   }
 
   .demo__part-4-1 .demo__part-back-inner {
-    transform: translate(0px, -462px);
+    transform: translate(0px, -432px);
   }
 
   .demo__part-4-2 .demo__part-back-inner {
-    transform: translate(-154px, -462px);
+    transform: translate(-144px, -432px);
   }
 
   .demo__part-4-3 .demo__part-back-inner {
-    transform: translate(-308px, -462px);
+    transform: translate(-288px, -432px);
   }
 
   .demo__part-4-4 .demo__part-back-inner {
-    transform: translate(-462px, -462px);
+    transform: translate(-432px, -432px);
   }
 
   .show-front {
