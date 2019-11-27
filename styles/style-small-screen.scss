@@ -1,8 +1,11 @@
+$pw-white: #FFFFFF;
 $pw-blue: #63B6F8;
 $pw-blue-1: #5DADE2;
 $pw-green-0: #27AE60;
 $pw-green: #2ECC71;
-$pw-green-1: #8EF863;
+$pw-green-1: #8EF863; //lighter of pw-green
+$pw-green-2: #29B765; //darker of pw-green
+$pw-green-3: #24A35A; // even darker
 
 $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
 
@@ -80,15 +83,12 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
     }
 
     .small-screen-profile-pic {
+        margin: auto;
         height: 90px;
         width: 90px;
         border-radius: 50%;
         background-image: url("../images/profiles/lydia.jpg");
         background-size: 100% 100%;
-        position: absolute;
-        top: 25%;
-        left: 50%;
-        transform: translate(-50%, -50%);
     }
 
     .link-highlight {
@@ -427,10 +427,10 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
 
     .writer-section {
         margin-top: 5%;
-        // height: 420px;
-        width: 80%;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
+        padding-bottom: 20px;
     }
 
     #david-baltimore.writer-section {
@@ -505,8 +505,7 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
 
     .writer-text-container {
         float: none;
-        height: 300px;
-        width: 80%;
+        width: 90%;
         padding-top: 2%;
         padding-left: 0;
         padding-right: 0;
@@ -515,7 +514,6 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
     }
 
     .writer-text-main {
-        height: 75%;
         width: 100%;
     }
 
@@ -535,16 +533,16 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
 
     .writer-text-title-logo-caltech {
         position: relative;
-        height: 32px;
-        width: 32px;
+        height: 28px;
+        width: 28px;
         background-image: url("../images/writer/caltech-logo.png");
         background-size: 100% 100%;
     }
 
     .writer-text-title-logo-stanford {
         position: relative;
-        height: 32px;
-        width: 32px;
+        height: 28px;
+        width: 28px;
         background-image: url("../images/writer/stanford-logo.png");
         background-size: 100% 100%;
     }
@@ -557,6 +555,7 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
     }
 
     .read-full-article-container {
+        margin-top: 15px;
         width: 100%;
         position: relative;
         bottom: 0;
@@ -568,7 +567,7 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        padding: 10px 20px;
+        padding: 8px 15px;
         background-color: $pw-blue;
         border-radius: 100px;
         font-size: 16px;
@@ -720,7 +719,7 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
     }
 
     /* below - new effect for kitty pictures*/
-    $partSize: 150px;
+    $partSize: 100px;
     $margins: 2px;
     $rows: 4; //change this also in js
     $cols: 4; //change this also in js
@@ -730,7 +729,7 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
     $transTime: 0.3s;
     $border-radius: 10px;
     $shadow-size: 12px;
-    $demo-bg: linear-gradient(60deg, #5B5893, darken(#6A66A6, 30%));
+    $demo-bg: linear-gradient($pw-green, $pw-green-3);
     $gallery-bg: #eee;
 
     *, *:before, *:after {
@@ -739,15 +738,22 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
       padding: 0;
     }
 
+    .kitty-section {
+        width: 100%;
+        background-image: $demo-bg;
+    }
+
     .demo {
-      display: flex;
-      width: 100vw;
-      height: 100vh;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      
-      background: $demo-bg;
+        display: flex;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .gallery-container {
+            margin-top: 2%;
+            margin-bottom: 5%;
+        }    
       
       &__gallery {
         width: $cols * $partSize + 2 * $cols * $margins + 2 * $margins;
@@ -847,9 +853,9 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
       }
       
       &__help {
-        margin-bottom: 7px;
-        font-size: 30px;
-        font-family: "Yanone Kaffeesatz", sans-serif;
+        padding-top: 3%;
+        font-size: 18px;
+        font-family: $pw-font-main;
         
         color: white;
         

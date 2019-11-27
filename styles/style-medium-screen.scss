@@ -1,8 +1,11 @@
+$pw-white: #FFFFFF;
 $pw-blue: #63B6F8;
 $pw-blue-1: #5DADE2;
 $pw-green-0: #27AE60;
 $pw-green: #2ECC71;
-$pw-green-1: #8EF863;
+$pw-green-1: #8EF863; //lighter of pw-green
+$pw-green-2: #29B765; //darker of pw-green
+$pw-green-3: #24A35A; // even darker
 
 $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
 
@@ -459,9 +462,10 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
     }
 
     .writer-section {
+        height: 300px;
+        margin-bottom: 35px;
         margin-top: 25px;
-        height: 240px;
-        width: 65%;
+        width: 70%;
         margin-left: auto;
         margin-right: auto;
         // TODO: update later
@@ -539,7 +543,6 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
     }
 
     .writer-text-container {
-        height: 240px;
         width: 70%;
         float: right;
         padding-right: 4%;
@@ -547,7 +550,6 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
     }
 
     .writer-text-main {
-        height: 75%;
         width: 100%;
         padding-bottom: 15px;
     }
@@ -558,7 +560,6 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
 
     .writer-text-title-content {
         color: $pw-blue;
-        // color: #568FFF;
         font-size: 22px;
         float: left;
     }
@@ -590,6 +591,7 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
     }
 
     .read-full-article-container {
+        margin-top: 15px;
         height: 50px;
         width: 100%;
         position: relative;
@@ -601,7 +603,7 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        padding: 10px 20px;
+        padding: 6px 10px;
         background-color: $pw-blue;
         border-radius: 100px;
         font-size: 18px;
@@ -752,7 +754,7 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
         animation: fade-in-effect 4s ease both 0.5s;
     }
 
-    /* below - new effect for kitty pictures*/
+    /* below - kitty-pic-block-2 for kitty pictures*/
     $partSize: 140px;
     $margins: 2px;
     $rows: 4; //change this also in js
@@ -763,7 +765,7 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
     $transTime: 0.3s;
     $border-radius: 10px;
     $shadow-size: 12px;
-    $demo-bg: linear-gradient(60deg, #5B5893, darken(#6A66A6, 30%));
+    $demo-bg: linear-gradient($pw-green, $pw-green-3);
     $gallery-bg: #eee;
 
     *, *:before, *:after {
@@ -772,27 +774,36 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
       padding: 0;
     }
 
+    .kitty-section {
+        width: 100%;
+        background-image: $demo-bg;
+    }
+
     .demo {
-      display: flex;
-      width: 100vw;
-      height: 100vh;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
+        display: flex;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
       
-      background: $demo-bg;
+        background: $demo-bg;
+
+        .gallery-container {
+            margin-top: 2%;
+            margin-bottom: 5%;
+        }
       
-      &__gallery {
-        width: $cols * $partSize + 2 * $cols * $margins + 2 * $margins;
-        height: $rows * $partSize + 2 * $rows * $margins + 2 * $margins;
-        padding: $margins;
-        flex-shrink: 0;
-        
-        background: $gallery-bg;
-        
-        perspective: $perspective;
-        border-radius: $border-radius;
-      }
+        &__gallery {
+            width: $cols * $partSize + 2 * $cols * $margins + 2 * $margins;
+            height: $rows * $partSize + 2 * $rows * $margins + 2 * $margins;
+            padding: $margins;
+            flex-shrink: 0;
+            
+            background: $gallery-bg;
+            
+            perspective: $perspective;
+            border-radius: $border-radius;
+        }
       
       &__placeholder {
         width: $partSize;
@@ -880,14 +891,14 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
       }
       
       &__help {
-        margin-bottom: 7px;
-        font-size: 30px;
-        font-family: "Yanone Kaffeesatz", sans-serif;
+        padding-top: 3%;
+        font-size: 22px;
+        font-family: $pw-font-main;
         
-        color: white;
+        color: $pw-white;
         
         & a {
-          color: white;
+          color: $pw-white;
           
           &:hover {
             color: #E39999;

@@ -35,6 +35,14 @@
     for (let i = 0; i < logo.length; i++) {
         console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);
     }
+
+    $(".navi-item").click(function() {
+        var navi = document.getElementById("navi-bar");
+        if (navi.className === "navi-bar display-menu") {
+            console.log("with display-menu");
+            navi.className = "navi-bar";
+        }
+    });
     
     $(".navi-item").hover(function() {
         $(this).animate({ fontSize: "28px" }, "1500");

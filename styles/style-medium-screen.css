@@ -438,9 +438,10 @@
   }
 
   .writer-section {
+    height: 300px;
+    margin-bottom: 35px;
     margin-top: 25px;
-    height: 240px;
-    width: 65%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -514,7 +515,6 @@
   }
 
   .writer-text-container {
-    height: 240px;
     width: 70%;
     float: right;
     padding-right: 4%;
@@ -522,7 +522,6 @@
   }
 
   .writer-text-main {
-    height: 75%;
     width: 100%;
     padding-bottom: 15px;
   }
@@ -564,6 +563,7 @@
   }
 
   .read-full-article-container {
+    margin-top: 15px;
     height: 50px;
     width: 100%;
     position: relative;
@@ -575,7 +575,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 10px 20px;
+    padding: 6px 10px;
     background-color: #63B6F8;
     border-radius: 100px;
     font-size: 18px;
@@ -724,21 +724,29 @@
     animation: fade-in-effect 4s ease both 0.5s;
   }
 
-  /* below - new effect for kitty pictures*/
+  /* below - kitty-pic-block-2 for kitty pictures*/
   *, *:before, *:after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
 
+  .kitty-section {
+    width: 100%;
+    background-image: linear-gradient(#2ECC71, #24A35A);
+  }
+
   .demo {
     display: flex;
     width: 100vw;
-    height: 100vh;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: linear-gradient(60deg, #5B5893, #2c2a49);
+    background: linear-gradient(#2ECC71, #24A35A);
+  }
+  .demo .gallery-container {
+    margin-top: 2%;
+    margin-bottom: 5%;
   }
   .demo__gallery {
     width: 580px;
@@ -815,13 +823,13 @@
     backface-visibility: hidden;
   }
   .demo__help {
-    margin-bottom: 7px;
-    font-size: 30px;
-    font-family: "Yanone Kaffeesatz", sans-serif;
-    color: white;
+    padding-top: 3%;
+    font-size: 22px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
   }
   .demo__help a {
-    color: white;
+    color: #FFFFFF;
   }
   .demo__help a:hover {
     color: #E39999;
