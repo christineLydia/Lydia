@@ -1070,7 +1070,7 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
     .music-box {
         position: fixed;
         z-index: 10;
-        top: 0;
+        bottom: 25px;
         right: 0;
         width: 300px;
         height: 160px;
