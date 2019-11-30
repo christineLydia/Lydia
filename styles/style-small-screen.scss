@@ -247,6 +247,7 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
     }
 
     .page {
+        padding-bottom: 20px;
         position: absolute;
         top: 0;
         left: 0;
@@ -886,7 +887,6 @@ $pw-font-main: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvet
 
     .art-section {
         background-color: #FFFFFF;
-        margin-top: 35px;
         margin-bottom: 30px;
         height: auto;
         width: 60%;

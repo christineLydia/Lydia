@@ -231,6 +231,7 @@
   }
 
   .page {
+    padding-bottom: 20px;
     position: absolute;
     top: 0;
     left: 0;
@@ -873,7 +874,6 @@
   /* above - new effect for kitty pictures*/
   .art-section {
     background-color: #FFFFFF;
-    margin-top: 35px;
     margin-bottom: 30px;
     height: auto;
     width: 60%;
